@@ -1,3 +1,6 @@
+{{- /* Socials + Contribute sit above the copyright footer (Phase 4). */ -}}
+{{- partial "extend_footer.html" . }}
+
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
     {{- if site.Copyright }}
@@ -9,7 +12,7 @@
         Powered by
         <a href="https://www.netlify.com/" rel="noopener noreferrer" target="_blank">Netlify</a>,
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>, &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a> | 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener noreferrer" target="_blank">PaperMod</a> | 
     </span>
     <span>
         <a href="https://github.com/SBOMit/specification/blob/main/LICENSE.md" rel="noopener noreferrer" target="_blank">Creative Commons Attribution 4.0 International</a>
@@ -24,8 +27,6 @@
     </svg>
 </a>
 {{- end }}
-
-{{- partial "extend_footer.html" . }}
 
 <script>
     let menu = document.getElementById('menu')
@@ -76,11 +77,12 @@
 {{- if (not site.Params.disableThemeToggle) }}
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

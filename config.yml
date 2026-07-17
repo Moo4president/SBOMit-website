@@ -3,16 +3,51 @@ title: SBOMit
 paginate: 5
 theme: PaperMod
 
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
+languages:
+  en:
+    locale: en
+    label: English
+    weight: 1
+    title: SBOMit
+  es:
+    locale: es
+    label: Español
+    weight: 2
+    title: SBOMit
+  fr:
+    locale: fr
+    label: Français
+    weight: 3
+    title: SBOMit
+  zh:
+    locale: zh-Hans
+    label: 中文
+    weight: 4
+    title: SBOMit
+  vi:
+    locale: vi
+    label: Tiếng Việt
+    weight: 5
+    title: SBOMit
 
 ## googleAnalytics:
 
 minify:
   disableXML: true
   minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -24,9 +59,11 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: dark
   disableThemeToggle: false
+  disableLangToggle: true
+  displayFullLangName: true
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -55,29 +92,12 @@ params:
     ## icon: /apple-touch-icon.png
     ## iconHeight: 35
 
-  # home-info mode
-  homeInfoParams:
-    Title: "Software Bill of Materials on in-toto (SBOMit)"
-    Content: |
-      The SBOMit specification is a SBOM format independent method for attesting components with
-      additional verification information. These attestation are generated at the time the supply chain was generated.
-
-      This verification information, which uses in-toto attestations and layouts, is able to be validated by 
-      a party to get a high degree of assurances about the software.
-    
-    Links: |
-      - [Specification](https://github.com/SBOMit/specification)
-      - [About](/about)
-    
-    Additional: |
-      ## Meetings
-      
-      - Schedule: every other Wednesday (biweekly) at 12pm US Eastern time at [this Zoom meeting](https://nyu.zoom.us/j/91097299041)
-      - [Notes](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)
-
   socialIcons:
     - name: github
       url: "https://github.com/SBOMit/specification"
+    - name: slack
+      # Replace with the project's Slack invite URL when available.
+      url: "https://slack.openssf.org/"
 
   analytics:
     google:
@@ -88,31 +108,28 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/sbomit/website/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: specification
-      name: Specification
+    - identifier: witness
+      name: witness.dev
+      url: https://witness.dev
+      weight: 5
+    - identifier: manifesto
+      name: Manifesto
       url: https://github.com/SBOMit/specification
       weight: 10
-    - identifier: about
-      name: About
-      url: /about/
+    - identifier: community
+      name: Community
+      url: /community/
       weight: 20
+    - identifier: documentation
+      name: Documentation
+      url: /documentation/
+      weight: 30
+    - identifier: faq
+      name: FAQ
+      url: /faq/
+      weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:

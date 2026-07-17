@@ -1,6 +1,6 @@
 ---
 author: "SBOMit Maintainers"
-title: "About"
+title: "FAQ"
 ShowToc: false
 ---
 

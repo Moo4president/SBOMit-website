@@ -1,16 +1,23 @@
+{{- /* Prefer home page content (_index.md) so translations work; fall back to homeInfoParams. */ -}}
+{{- if and .IsHome .Content }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content md-content">
+        {{ .Content }}
+    </div>
+</article>
+{{- else -}}
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
-    <div class="entry-content">
-        {{ .Content | markdownify }}
+    <div class="entry-content md-content">
+        {{ $opts := dict "display" "block" }}
+        {{ .Content | $.Page.RenderString $opts }}
     </div>
-    <div class="entry-links">
-        {{ .Links | markdownify }}
-    </div>
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" site.Params.socialIcons }}
-    </footer>
 </article>
+{{- end -}}
 {{- end -}}

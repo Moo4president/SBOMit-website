@@ -1,2 +1,31 @@
-node_modules/
+# Secrets
 .env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
+
+# Local dev / tooling
+.cursor/
+screenshots/
+
+# Netlify local state
+.netlify/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
