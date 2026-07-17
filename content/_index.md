@@ -1,5 +1,6 @@
 ---
 title: "Software Bill of Materials on in-toto (SBOMit)"
+translationKey: "home"
 ---
 
 The SBOMit specification is a SBOM format independent method for attesting components with

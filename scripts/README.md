@@ -27,7 +27,7 @@ Translates:
 - `content/community.md`
 - `content/documentation.md`
 
-Skips `CHARTER.md`. Writes `content/*.{es,fr,zh,vi}.md`.
+Skips `CHARTER.md`. Writes `content/*.{es,fr,zh,vi}.md`. Adds `translationKey` to English sources when missing.
 
 ## Protected technical terms
 

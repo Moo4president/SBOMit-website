@@ -1,6 +1,7 @@
 ---
 author: "SBOMit Maintainers"
 title: "Community"
+translationKey: "community"
 ShowToc: true
 ---
 

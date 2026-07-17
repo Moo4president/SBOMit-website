@@ -258,6 +258,34 @@ function slugFromFilename(name) {
   return base === "_index" ? "home" : base;
 }
 
+function buildEnglishFrontMatter(fm, translationKey) {
+  const lines = ["---"];
+  if (fm.author) {
+    lines.push(`author: "${String(fm.author).replace(/"/g, '\\"')}"`);
+  }
+  if (fm.title !== undefined) {
+    lines.push(`title: "${String(fm.title).replace(/"/g, '\\"')}"`);
+  }
+  lines.push(`translationKey: "${translationKey}"`);
+  if (fm.ShowToc !== undefined) {
+    lines.push(`ShowToc: ${fm.ShowToc}`);
+  }
+  lines.push("---", "");
+  return lines.join("\n");
+}
+
+/** Ensure English source has translationKey so Hugo links all locales. */
+function ensureEnglishTranslationKey(relPath) {
+  const abs = join(CONTENT_DIR, relPath);
+  const raw = readFileSync(abs, "utf8");
+  const { fm, body } = parseFrontMatter(raw);
+  const translationKey = slugFromFilename(relPath);
+  if (fm.translationKey === translationKey) return;
+  const header = buildEnglishFrontMatter(fm, translationKey);
+  writeFileSync(abs, header + body, "utf8");
+  console.log(`  updated content/${relPath} (translationKey: ${translationKey})`);
+}
+
 function buildFrontMatter(fm, lang, translationKey) {
   const title = fm.title ?? "";
   const author = fm.author ?? "SBOMit Maintainers";
@@ -300,6 +328,7 @@ async function translateFile(relPath, cache, stats) {
     console.warn(`Skip missing: ${relPath}`);
     return;
   }
+  ensureEnglishTranslationKey(relPath);
   const raw = readFileSync(abs, "utf8");
   const { fm, body } = parseFrontMatter(raw);
   const translationKey = slugFromFilename(relPath);

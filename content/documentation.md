@@ -1,6 +1,7 @@
 ---
 author: "SBOMit Maintainers"
 title: "Documentation"
+translationKey: "documentation"
 ShowToc: true
 ---
 
