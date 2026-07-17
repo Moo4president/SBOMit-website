@@ -5,8 +5,8 @@ translationKey: "community"
 ShowToc: true
 ---
 **SBOMit** est un projet communautaire ouvert développé dans le cadre du groupe de travail « Security
-Tooling » de l&#x27;OpenSSF. Nous invitons les contributeurs, les utilisateurs et toute personne souhaitant
-contribuer à renforcer la fiabilité des chaînes d&#x27;approvisionnement logicielles à nous rejoindre.
+Tooling » de l'OpenSSF. Nous invitons les contributeurs, les utilisateurs et toute personne intéressée
+par l'amélioration de la fiabilité des chaînes d'approvisionnement logicielles à nous rejoindre.
 
 ## Réunions
 
@@ -20,5 +20,5 @@ contribuer à renforcer la fiabilité des chaînes d&#x27;approvisionnement logi
 
 ## Rejoignez notre canal Slack !
 
-- Cliquez sur l&#x27;icône Slack en bas de la page
-- Ajoutez ces deux canaux : `#sbomit` et `#sig-sbom-everywhere`
+- Cliquez sur l'icône Slack en bas de la page
+- Ajoutez ces deux canaux : `#SBOMit` et `#sig-SBOM-everywhere`

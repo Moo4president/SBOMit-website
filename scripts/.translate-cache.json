@@ -268,5 +268,815 @@
     "fr": "## Outillage",
     "zh": "## 工装",
     "vi": "## Dụng cụ gia công"
+  },
+  "ce642926b0ed863675e2da5feae7d9474cfabaa53c689ba7fe5551075190a102": {
+    "es": "Lista de componentes de software en in-toto (SBOMit)",
+    "fr": "Liste des composants logiciels sur in-toto (SBOMit)",
+    "zh": "in-toto 上的软件物料清单 (SBOMit)",
+    "vi": "Danh mục thành phần phần mềm trên in-toto (SBOMit)"
+  },
+  "8c4321e27f62c0590fb31d19e98cac63f932313931c9d698d1a3564fc0a9bde0": {
+    "es": "La especificación «SBOMit» es un método independiente del formato «SBOM» para certificar componentes con\ninformación de verificación adicional. Estos «attestation» se generan en el momento en que se crea la cadena de suministro.",
+    "fr": "La spécification «SBOMit» est une méthode indépendante du format «SBOM» permettant d’attester des composants à l’aide\nd’informations de vérification supplémentaires. Ces «attestation» sont générées au moment de la création de la chaîne d’approvisionnement.",
+    "zh": "SBOMit规范是一种SBOM的、与格式无关的方法，用于通过\n附加验证信息对组件进行认证。这些attestation是在生成供应链时生成的。",
+    "vi": "Tiêu chuẩn “SBOMit” là một phương pháp không phụ thuộc vào định dạng “SBOM” nhằm xác thực các thành phần kèm theo\nthông tin xác minh bổ sung. Các thông tin xác minh bổ sung này (attestation) được tạo ra tại thời điểm chuỗi cung ứng được thiết lập."
+  },
+  "91a0bb23a92ddf14e4715847415c8196158d08bc7cd8fee3999bba5c212eafb7": {
+    "es": "Esta información de verificación, que utiliza in-toto, attestations y layouts, puede ser validada por\nuna parte para obtener un alto grado de garantía sobre el software.",
+    "fr": "Ces informations de vérification, qui s'appuient sur les sites in-toto, attestations et layouts, peuvent être validées par\nune tierce partie afin d'obtenir un niveau élevé d'assurance concernant le logiciel.",
+    "zh": "该验证信息使用了 in-toto、attestations 和 layouts，相关方可通过验证该信息，\n从而对该软件获得高度的保证。",
+    "vi": "Thông tin xác minh này, sử dụng các địa chỉ in-toto, attestations và layouts, có thể được một bên liên quan xác thực\nđể đạt được mức độ đảm bảo cao về phần mềm."
+  },
+  "cbc3ed54debd4ef5733cbb59dec69fe0246866eb7f8f099ea24c99c3f17b0a74": {
+    "es": "Preguntas frecuentes",
+    "fr": "FAQ",
+    "zh": "常见问题解答",
+    "vi": "Câu hỏi thường gặp"
+  },
+  "40264cdc31f3700cdb3bdf6435e2849f5d9fee67dc246940bcf674db104e0859": {
+    "es": "## ¿Qué es «SBOMit»?",
+    "fr": "## Qu'est-ce que «SBOMit » ?",
+    "zh": "## 什么是SBOMit？",
+    "vi": "## “SBOMit” là gì?"
+  },
+  "837c0aaed7d6c0a1a0e1b4ee3de1af6846cc5497659ba97935b6ca6a4858f53a": {
+    "es": "SBOMit Es el nombre del proyecto que gestiona el formato de especificación «SBOMit». Un documento «SBOMit» es, en la práctica, un «SBOM», pero con información de verificación adicional que se generó en el momento en que se creó la cadena de suministro. Esta información de verificación, que utiliza in-toto, attestations y layouts, puede ser validada por una parte para obtener un alto grado de garantía sobre el software.",
+    "fr": "SBOMit C'est le nom du projet qui gère le format de spécification «SBOMit». Un document «SBOMit» correspond en réalité à un «SBOM», auquel ont été ajoutées des informations de vérification générées au moment de la création de la chaîne d'approvisionnement. Ces informations de vérification, qui s'appuient sur les sites in-toto, attestations et layouts, peuvent être validées par une partie prenante afin d'obtenir un haut niveau d'assurance concernant le logiciel.",
+    "zh": "SBOMit 是管理“SBOMit”规范格式的项目名称。SBOMit文档实质上就是SBOM，只是额外添加了在生成供应链时生成的验证信息。该验证信息采用in-toto、attestations和layouts，相关方可对其进行验证，从而获得关于该软件的高可信度保证。",
+    "vi": "SBOMit là tên của dự án quản lý định dạng thông số kỹ thuật “SBOMit”. Một tài liệu “SBOMit” thực chất là một “SBOM”, chỉ có thêm thông tin xác minh được tạo ra tại thời điểm xây dựng chuỗi cung ứng. Thông tin xác minh này, sử dụng các tiêu chuẩn in-toto, attestations và layouts, có thể được một bên liên quan xác thực để đạt được mức độ đảm bảo cao về phần mềm."
+  },
+  "a1b8ddf2576e222e855eaf3ceb18a89edaa1b5e2e4127fbd7afcd2a682ae0ef6": {
+    "es": "## ¿Qué contiene un documento «SBOMit» y por qué?",
+    "fr": "## Que contient un document « SBOMit » et pourquoi ?",
+    "zh": "## 《SBOMit》文件包含哪些内容？原因是什么？",
+    "vi": "## Tài liệu “SBOMit” bao gồm những nội dung gì và tại sao?"
+  },
+  "7eefb7875e1a149c818e457c284882bb7d834ee916f68e9ccf51ed3689e3b7c0": {
+    "es": "Un documento «SBOMit» es un documento firmado que consta de varios componentes diferentes.  ",
+    "fr": "Un document «SBOMit» est un document signé composé de plusieurs éléments distincts.  ",
+    "zh": "SBOMit文档是一份经过签名的文档，由几个不同的组成部分构成。  ",
+    "vi": "Tài liệu “SBOMit” là một tài liệu đã được ký tên, bao gồm một số thành phần khác nhau.  "
+  },
+  "131f17632ebdc09f4b786544bc24a5aa20d74b4563cafe3abe1a854ec07bb00c": {
+    "es": "En primer lugar, contiene una serie de archivos in-toto attestations que se generaron durante el desarrollo del software descrito. Esto incluye información detallada sobre las diferentes etapas de la cadena de suministro del software, como el sistema de control de versiones, el proceso de compilación, las pruebas unitarias, las dependencias utilizadas, el fuzzing, las comprobaciones de cumplimiento de licencias, el empaquetado, etc.  Por ejemplo, el sistema de compilación utilizado para compilar el software en SBOM cuenta con in-toto metadata, donde figuran los nombres y los hash seguros de los archivos extraídos del sistema de control de versiones (VCS) para su compilación, los nombres y los hash seguros de los archivos creados durante la compilación, una serie de datos sobre el compilador y una firma generada por una clave privada en poder del compilador.",
+    "fr": "Tout d’abord, il contient une série de fichiers «in-toto » (attestations) générés au fur et à mesure du développement du logiciel décrit. Cela comprend des informations détaillées sur les différentes étapes de la chaîne de développement du logiciel, notamment sur le système de contrôle de version, le processus de compilation, les tests unitaires, les dépendances utilisées, le fuzzing, les vérifications de conformité des licences, le packaging, etc.  Par exemple, le système de compilation utilisé pour compiler le logiciel dans l’SBOM contient in-toto metadata avec les noms et les hachages sécurisés des fichiers extraits du système de contrôle de version (VCS) pour être compilés, les noms et les hachages sécurisés des fichiers créés lors de la compilation, une série d’informations sur le compilateur, ainsi qu’une signature générée par une clé privée détenue par le compilateur.",
+    "zh": "首先，它包含了一系列在开发所述软件过程中生成的 in-toto attestations 文件。其中包含关于软件供应链各阶段的详细信息，包括版本控制系统、构建流程、单元测试、所用依赖项、模糊测试、许可合规性检查、打包等。  例如，用于在 SBOM 编译软件的构建系统包含 in-toto metadata，其中记录了从版本控制系统（VCS）中提取以供编译的文件的名称和安全哈希值、编译过程中生成的文件的名称和安全哈希值、关于编译器的一系列信息，以及由编译器持有的私钥所签署的签名。",
+    "vi": "Trước hết, nó chứa một loạt các tệp in-toto attestations được tạo ra trong quá trình phát triển phần mềm như đã mô tả. Điều này bao gồm thông tin chi tiết về các bước khác nhau trong chuỗi cung ứng phần mềm, bao gồm hệ thống kiểm soát phiên bản, quy trình biên dịch, kiểm thử đơn vị, các phụ thuộc được sử dụng, kiểm thử fuzzing, kiểm tra tuân thủ giấy phép, đóng gói, v.v.  Ví dụ, hệ thống xây dựng được sử dụng để biên dịch phần mềm trong SBOM có in-toto metadata với tên và hàm băm an toàn của các tệp được lấy từ VCS để biên dịch, tên và hàm băm an toàn của các tệp được tạo ra trong quá trình biên dịch, một loạt thông tin về trình biên dịch, và chữ ký bằng khóa riêng do trình biên dịch nắm giữ."
+  },
+  "da48efadef9f0d4f34065980fbfcad67d3aeb63b4dd896af8e8728549f8640a7": {
+    "es": "Esta información attestation puede utilizarse en coordinación con el segundo punto del documento SBOMit: un in-toto layout. El in-toto layout está firmado por el responsable del proyecto y describe cómo debe ser una attestation metadata válida para el proyecto. El layout especifica las claves privadas de las partes que llevan a cabo el attestations, así como la forma en que se interconectan los pasos.  Por ejemplo, el VCS debe tener una etiqueta git firmada, sobre la que luego opera el sistema de compilación.  Los archivos compilados por el sistema de compilación deben ser los que se han sometido a las pruebas unitarias, las cuales deben haber superado con éxito.   Es importante destacar que un «in-toto» (layout) proporciona una política legible por máquina que puede validar el «in-toto» (attestations) para garantizar que se han seguido todos esos pasos, en el orden correcto, sobre los elementos adecuados y sin que se haya añadido, omitido ni eliminado nada.",
+    "fr": "Ces informations relatives à l’attestation peuvent être utilisées en coordination avec le deuxième élément du document « SBOMit » : un « in-toto » (layout). Le document « in-toto » (layout) est signé par le responsable du projet et décrit à quoi ressemble une « attestation » (metadata) valide pour le projet. Le fichier « layout » spécifie les clés privées des parties intervenant dans le processus de validation (attestations), ainsi que la manière dont les différentes étapes s’enchaînent. Par exemple, le système de contrôle de version (VCS) doit disposer d’une balise Git signée, sur laquelle le système de compilation opère ensuite. Les fichiers compilés par le système de compilation doivent être ceux qui ont été soumis aux tests unitaires, lesquels doivent avoir été réussis.   Il est important de noter qu’un « in-toto » (layout) fournit une politique lisible par machine capable de valider le « in-toto » (attestations) afin de garantir que toutes ces étapes ont été suivies, dans le bon ordre, sur les bons éléments, et sans rien ajouter, sauter ou supprimer.",
+    "zh": "该 attestation 中的信息可与 SBOMit 文档中的第二项配合使用：即 in-toto layout。该 in-toto layout 由项目所有者签署，并描述了该项目有效的 attestation metadata 应具备的特征。 layout 文件规定了执行 attestations 的各方所需的私钥，以及各步骤之间的衔接方式。例如，版本控制系统（VCS）必须拥有一个已签名的 Git 标签，构建系统随后将基于该标签进行操作。由构建系统编译的文件必须是已通过单元测试的文件，且这些测试必须已通过。   重要的是，in-toto layout 提供了一份机器可读的策略，该策略可验证 in-toto attestations，以确保所有步骤均按正确顺序、针对正确对象执行，且未被添加、跳过或删除任何内容。",
+    "vi": "Thông tin tại attestation có thể được sử dụng kết hợp với mục thứ hai trong tài liệu SBOMit: một in-toto layout.  Tài liệu in-toto layout được ký bởi chủ sở hữu dự án và mô tả các attestation metadata hợp lệ cho dự án trông như thế nào. Tài liệu \"layout\" quy định các khóa riêng tư cho các bên thực hiện quy trình \"attestations\" cũng như cách các bước này liên kết với nhau. Ví dụ, hệ thống kiểm soát phiên bản (VCS) phải có một thẻ Git đã được ký, mà hệ thống xây dựng sau đó sẽ thao tác trên đó. Các tệp được hệ thống xây dựng biên dịch phải là những tệp đã được chạy qua các bài kiểm tra đơn vị (unit tests), và các bài kiểm tra này phải đã qua.   Điều quan trọng là, Chính sách Kiểm tra Tích hợp (in-toto) layout cung cấp một chính sách có thể đọc được bởi máy tính, có thể xác thực Quy trình Xây dựng (in-toto) attestations để đảm bảo rằng tất cả các bước đó đã được thực hiện đúng thứ tự, trên các mục đúng, và không có gì được thêm vào, bỏ qua hoặc loại bỏ."
+  },
+  "f668093bd79330dc3f732f532114c5dc208ac7979630a73575ed3fa299886a11": {
+    "es": "El elemento final que siempre aparece en el documento SBOMit es la información complementaria SBOM. Esta información, junto con in-toto, attestations y in-toto, layout, puede utilizarse para generar un SBOM real en diversos formatos. La información complementaria SBOM puede incluir datos como el nombre de la empresa u otra información que no figura en in-toto, pero que es conveniente incluir en el SBOM resultante.  De este modo, un documento SBOM generado a partir de un documento SBOMit puede incluir información complementaria que no formaba parte del proceso in-toto.",
+    "fr": "Le dernier élément qui figure systématiquement dans le document SBOMit est l’information complémentaire SBOM. Ces informations, associées à celles disponibles sur in-toto, attestations et in-toto, layout, peuvent être utilisées pour générer un SBOM complet dans divers formats. L’information complémentaire SBOM peut inclure des éléments tels que le nom de l’entreprise ou d’autres renseignements qui ne figurent pas sur in-toto, mais dont l’intégration dans le SBOM final est souhaitable.  De cette manière, un document SBOM généré à partir d’un document SBOMit peut inclure des informations supplémentaires qui ne faisaient pas partie du processus in-toto.",
+    "zh": "SBOMit文档中始终出现的最后一项是补充信息SBOM。该信息可与in-toto、attestations以及in-toto layout结合使用，以生成多种格式的实际SBOM。补充信息SBOM可能包含公司名称或其他未被in-toto收录、但希望纳入最终生成的SBOM中的信息。  通过这种方式，由SBOMit文档生成的SBOM，可以包含in-toto处理过程中未涉及的补充信息。",
+    "vi": "Mục cuối cùng luôn xuất hiện trong tài liệu SBOMit là thông tin bổ sung SBOM. Thông tin này cùng với in-toto attestations và in-toto layout có thể được sử dụng để tạo ra một SBOM thực tế dưới nhiều định dạng khác nhau. Thông tin bổ sung SBOM có thể bao gồm các nội dung như tên công ty hoặc các thông tin khác không được đề cập trong in-toto nhưng cần được đưa vào SBOM kết quả.  Như vậy, một tệp SBOM được tạo ra từ tài liệu SBOMit có thể bao gồm thông tin bổ sung không thuộc phần của quy trình in-toto."
+  },
+  "a907bf65889b7b73448407f2e6f4636df03b3335cce463ac48476558627bc3f9": {
+    "es": "También existe una forma de añadir un archivo «addendums» a un documento «SBOMit», que se describirá más adelante.",
+    "fr": "Il existe également un moyen d'ajouter un fichier « addendums » à un document « SBOMit », qui sera décrit plus loin.",
+    "zh": "此外，还有一种方法可以在SBOMit文档中添加addendums，相关内容将在后面介绍。",
+    "vi": "Ngoài ra, còn có một cách để thêm addendums vào tài liệu SBOMit, điều này sẽ được trình bày chi tiết hơn ở phần sau."
+  },
+  "951ed716cf04b840eea4bf1ae0e903be6216df781ed41da5c3a42519ace99334": {
+    "es": "## ¿Cuáles son las ventajas de un documento «SBOMit» frente al uso de una herramienta de generación «SBOM» que analiza el software?",
+    "fr": "## Quels sont les avantages d'un document « SBOMit » par rapport à l'utilisation d'un outil de génération de « SBOM » qui analyse le logiciel ?",
+    "zh": "## 与使用SBOM生成工具（该工具会扫描软件）相比，SBOMit文档有哪些优势？",
+    "vi": "## Tài liệu “SBOMit” có những ưu điểm gì so với việc sử dụng công cụ tạo mã “SBOM” dựa trên việc quét phần mềm?"
+  },
+  "e22e52a7c74478f28a0381926f100de6f8495441ff06c5727d6abed590432beb": {
+    "es": "Las herramientas de análisis, por su propia naturaleza, examinan un programa y tratan de determinar qué ocurrió anteriormente. Por su propia naturaleza, son imperfectas, ya que utilizan información incompleta para intentar reconstruir lo que ocurrió en el pasado. La experiencia práctica ha demostrado que diferentes herramientas de análisis ofrecen resultados muy dispares para un mismo programa.  ",
+    "fr": "De par leur nature même, les outils d'analyse examinent un logiciel pour tenter de déterminer ce qui s'est passé auparavant. Par nature, ils sont imparfaits, car ils s'appuient sur des informations incomplètes pour tenter de reconstituer ce qui s'est passé dans le passé. L'expérience pratique a montré que différents outils d'analyse donnent des résultats très divergents pour un même logiciel.  ",
+    "zh": "扫描工具的本质是分析一段软件代码，进而试图推断此前发生过什么。由于其本质，这类工具难免存在缺陷，因为它们是利用不完整的信息来尝试还原过去发生的情况。实际应用表明，针对同一款软件，不同的扫描工具得出的结果可能大相径庭。  ",
+    "vi": "Về bản chất, các công cụ quét sẽ phân tích một phần mềm và sau đó cố gắng xác định những gì đã xảy ra trước đó. Về bản chất, chúng không hoàn hảo vì sử dụng thông tin không đầy đủ để cố gắng khôi phục lại những gì đã xảy ra trong quá khứ. Thực tiễn đã cho thấy rằng các công cụ quét khác nhau có thể đưa ra kết quả hoàn toàn khác nhau đối với cùng một phần mềm.  "
+  },
+  "90464efebf8b499a0164b29f51c2e5ef126619ebfb45ce427fc7013ec06eda8b": {
+    "es": "Las secciones «in-toto» (",
+    "fr": "Les sections «in-toto» (attestation) d’un document «SBOMit» sont générées au moment où le logiciel est traité tout au long de la chaîne d’approvisionnement logicielle. Par conséquent, ces informations seront bien plus précises, car in-toto attestations recueillent des informations détaillées au moment de la fabrication du produit logiciel. Cela rend, par nature, un document «SBOMit» bien plus précis.",
+    "zh": "SBOMit 文档中的 in-toto attestation 部分是在软件通过软件供应链进行处理时生成的。因此，这些信息会更加准确，因为 in-toto attestations 会在软件产品制造过程中收集详细信息。这使得 SBOMit 文档从本质上来说更加准确。",
+    "vi": "Các phần in-toto attestation của tài liệu SBOMit được tạo ra tại thời điểm phần mềm được xử lý qua chuỗi cung ứng phần mềm. Do đó, thông tin này sẽ chính xác hơn rất nhiều vì in-toto attestations thu thập thông tin chi tiết ngay tại thời điểm sản phẩm phần mềm đang được phát triển. Điều này khiến tài liệu SBOMit trở nên chính xác hơn rất nhiều, do bản chất của nó."
+  },
+  "a2f85b264ffaa4da9c78b989f921c918ea217300c84ae506dd6d22aa9081fae9": {
+    "es": "## ¿Cuáles son las ventajas de un documento «SBOMit» frente a la simple firma de un «SBOM»?",
+    "fr": "## Quels sont les avantages d'un document « SBOMit » par rapport à la simple signature d'un « SBOM » ?",
+    "zh": "## 与直接签署《SBOM》相比，SBOMit文件有哪些优势？",
+    "vi": "## Những ưu điểm của văn bản “SBOMit” so với việc chỉ đơn thuần ký vào văn bản “SBOM” là gì?"
+  },
+  "659e363c3d39b30d20dcf69929f3b4dee162ca833de467d4e78449e98c354104": {
+    "es": "Un «SBOM» firmado es una declaración firmada por una persona que posee la clave de firma de una organización y en la que se afirma que el «SBOM» es correcto. Si la clave fuera robada, o si la parte que firma el «SBOM» se equivocara respecto a cómo se ha creado el software, entonces el «SBOM» sería incorrecto.",
+    "fr": "Une «SBOM » signée est une déclaration signée par une personne détenant la clé de signature au sein d'une organisation, attestant que l'SBOM est exacte. Si la clé est volée, ou si la personne signant l'SBOM se trompe sur la manière dont le logiciel a été créé, alors l'SBOM sera inexacte.",
+    "zh": "一个经过签名的 SBOM 是由某组织中持有签名密钥的人员签署的声明，表明 SBOM 内容准确无误。如果密钥被盗，或者签署 SBOM 的方对软件的制作方式存在误解，那么 SBOM 的内容将不准确。",
+    "vi": "Một tệp “SBOM” đã được ký là một tuyên bố có chữ ký của người nắm giữ khóa ký tại một tổ chức, trong đó khẳng định rằng tệp “SBOM” là chính xác. Nếu khóa bị đánh cắp, hoặc bên ký tệp “SBOM” cung cấp thông tin không chính xác về cách phần mềm được phát triển, thì tệp “SBOM” sẽ không chính xác."
+  },
+  "0e60d97c549da69e5852982a28e35da2f98a0f8b22d2a90fc932f28a5d36f066": {
+    "es": "Un documento «SBOMit» contiene información metadata firmada criptográficamente sobre todos los pasos que se han seguido en el desarrollo del software y describe la política que debe respetarse.  Es mucho más difícil que pasen desapercibidas imprecisiones accidentales, como saltarse un paso (lo cual ha sido un problema habitual), o que se produzcan acciones maliciosas.  in-toto también ofrece una mayor capacidad para recuperarse de forma segura tras un ataque y para detectar y contrarrestar las acciones maliciosas de una parte dentro de una organización.",
+    "fr": "Un document « SBOMit » contient des metadatas signées cryptographiquement concernant toutes les étapes ayant conduit à la création du logiciel et décrit la politique à respecter.  Il est ainsi beaucoup plus difficile que des inexactitudes accidentelles, telles que l’omission d’une étape (ce qui a souvent posé problème par le passé), ou des actions malveillantes passent inaperçues.  La «in-toto » offre également une plus grande capacité à se remettre en toute sécurité d’une compromission, ainsi qu’à détecter et à contrer les actions malveillantes menées par un acteur au sein d’une organisation.",
+    "zh": "SBOMit文档包含经过加密签名的metadata，其中记录了软件开发过程中的所有步骤，并描述了必须遵循的政策。  像遗漏某个步骤（历史上这曾是一个问题）这样的无意疏漏，或是恶意行为，都更难不被察觉。in-toto 还提供了更强大的能力，既能安全地从系统遭入侵中恢复，又能检测并抵御组织内部某一方的恶意行为。",
+    "vi": "Một tài liệu “SBOMit” chứa các thông tin được ký số bằng thuật toán mã hóa (metadata) về tất cả các bước đã được thực hiện trong quá trình phát triển phần mềm và mô tả chính sách mà các bên liên quan phải tuân thủ.  Việc các sai sót vô ý như bỏ qua một bước (điều này trước đây từng là một vấn đề) hoặc các hành động độc hại không bị phát hiện sẽ trở nên khó khăn hơn rất nhiều.  in-toto cũng cung cấp khả năng cao hơn để khôi phục an toàn sau khi hệ thống bị xâm phạm, đồng thời phát hiện và chống lại các hành động độc hại từ một bên nào đó trong tổ chức."
+  },
+  "b04995fbe3066d4cf0857fd149b2a65e1751b9c419e9401c4e815142525396d0": {
+    "es": "Por poner un ejemplo, un certificado de autenticación (SBOM) hoy en día se parece mucho a la lista de ingredientes que aparece en un producto. Sin embargo, en la práctica, esta información suele ser inexacta, podría ser modificada por alguien malintencionado y no está verificada. Firmar un certificado de autenticación (SBOM) ayuda a evitar que sea modificado por alguien malintencionado, de modo que sabes que la lista de ingredientes que recibes ha sido aprobada por una empresa concreta.  Un documento de «SBOMit» (Declaración de conformidad) también describe detalladamente el proceso de fabricación del producto e incluye «metadata» y las firmas de todas las partes implicadas, incluida la verificación de que las claves utilizadas estaban vigentes en ese momento.  Por lo tanto, en el caso de un documento de «SBOMit», se tiene un alto grado de garantía de que se han seguido las políticas y procedimientos adecuados.",
+    "fr": "Pour utiliser une analogie, une « SBOM » (déclaration de composition) correspond aujourd’hui en grande partie à la liste des ingrédients figurant sur un produit. Seulement, dans la pratique, ces informations sont souvent inexactes, peuvent être modifiées par une personne malveillante et ne font l’objet d’aucune vérification. La signature d’une « SBOM » permet d’empêcher toute modification par une personne malveillante, ce qui vous garantit que la liste des ingrédients qui vous est fournie a bien été approuvée par une entreprise spécifique.  Un document «SBOMit» décrit également en détail le processus de fabrication du produit et contient desmetadatas ainsi que les signatures de toutes les parties concernées, y compris la vérification que les clés utilisées étaient à jour à ce moment-là. Ainsi, dans le cas d’un document «SBOMit», vous disposez d’un haut degré de garantie que les politiques et procédures appropriées ont été respectées.",
+    "zh": "打个比方，如今的“SBOM”就如同产品上的成分表。只是实际上，这些信息通常并不准确，可能会被恶意方篡改，且未经核实。对“SBOM”进行签名有助于防止其被恶意方篡改，从而确保您获得的成分表确实经过了特定公司的批准。  SBOMit文档还会详细描述产品的制造过程，并包含所有相关方的metadata和签名，其中包括对所用密钥在当时是否有效的验证。因此，对于SBOMit文档，您可以高度确信相关政策和程序已得到正确遵循。",
+    "vi": "Để lấy một ví dụ so sánh, ngày nay, “SBOM” (Tuyên bố thành phần) cũng giống như danh sách thành phần trên một sản phẩm. Tuy nhiên, trên thực tế, thông tin này thường không chính xác, có thể bị các bên có ý đồ xấu thay đổi và không được xác minh. Việc ký số vào “SBOM” (Tuyên bố thành phần) giúp ngăn chặn việc thông tin này bị các bên có ý đồ xấu thay đổi, nhờ đó bạn có thể chắc chắn rằng danh sách thành phần mà bạn nhận được đã được một công ty cụ thể phê duyệt.  Tài liệu “SBOMit” cũng mô tả chi tiết quy trình sản xuất sản phẩm và bao gồm các thông tin xác thực (metadata) cùng chữ ký của tất cả các bên liên quan, bao gồm cả việc xác minh rằng các khóa được sử dụng là hợp lệ tại thời điểm đó. Do đó, đối với tài liệu “SBOMit”, bạn có thể hoàn toàn tin tưởng rằng các chính sách và quy trình thích hợp đã được tuân thủ."
+  },
+  "885e2da2beda366b394ae2182674de647067611ec8acc496fc0f952e21189736": {
+    "es": "Para obtener más información sobre este tema, consulta la sección [¿Qué ventajas ofrece in-toto?](https:// in-toto.io/ in-toto /) en la página web in-toto.",
+    "fr": "Pour plus d'informations à ce sujet, veuillez consulter la rubrique [Quels sont les avantages d'in-toto](https:// in-toto.io/ in-toto /) sur le site in-toto.",
+    "zh": "如需了解有关此主题的更多信息，请参阅in-toto网站上的[in-toto有哪些优势](https:// in-toto.io/ in-toto /)。",
+    "vi": "Để biết thêm thông tin về chủ đề này, vui lòng tham khảo bài viết [in-toto mang lại những lợi ích gì](https:// in-toto.io/ in-toto /) trên trang web in-toto."
+  },
+  "f4a142bbbc456c0d58dda5c4bab81d708a36f35e4d2f90d25a055fbaf8f39471": {
+    "es": "## ¿Qué pasaría si la cadena de suministro de un software contuviera etapas inseguras?  ",
+    "fr": "## Que se passe-t-il si la chaîne d'approvisionnement d'un logiciel comporte des étapes non sécurisées ?  ",
+    "zh": "## 如果软件供应链中存在不安全的环节，会怎样？  ",
+    "vi": "## Nếu chuỗi cung ứng phần mềm chứa các bước không an toàn thì sao?  "
+  },
+  "b7f6e3a5d11d2799f17ca8c89fdc983c9de818383ee295db7dee4ab20e3b1f46": {
+    "es": "in-toto attestations no sustituyen a la implementación de medidas de seguridad adecuadas en la cadena de suministro de software. Por ejemplo, si utilizas un proceso inseguro de compilación de software que simplemente utiliza la herramienta «curl» para descargar y compilar software desde un sitio web, in-toto y layouts pueden registrar esta acción insegura y verificar el archivo firmado attestations, lo que indica que has realizado dicha acción insegura.  ",
+    "fr": "in-toto attestations ne remplacent pas la mise en place de mesures de sécurité adéquates tout au long de la chaîne logistique logicielle. Par exemple, si vous utilisez un processus de compilation non sécurisé qui se contente de récupérer et de compiler un logiciel à partir d’un site web, in-toto layouts peut répertorier cette action non sécurisée et vérifier la présence d’un fichier signé attestations indiquant que vous avez effectué cette action non sécurisée.  ",
+    "zh": "in-toto attestations 不能替代在软件供应链中采取适当的安全措施。例如，如果您使用一种不安全的软件构建流程，仅通过 curl 命令从网站下载并构建软件，in-toto layouts 可以列出这一不安全操作，并验证签名的 attestations，表明您执行了该不安全操作。  ",
+    "vi": "in-toto attestations không thể thay thế cho việc áp dụng các biện pháp bảo mật phù hợp trong chuỗi cung ứng phần mềm. Ví dụ, nếu bạn sử dụng quy trình xây dựng phần mềm không an toàn, chỉ đơn thuần sử dụng lệnh curl để tải xuống và biên dịch phần mềm từ một trang web, thì in-toto và layouts có thể liệt kê hành động không an toàn này và xác minh tệp đã ký attestations, cho thấy rằng bạn đã thực hiện hành động không an toàn này.  "
+  },
+  "ca2d525acc33b855d322dff006daaef87bc674db758e6f2e02bf8a0fc17ef9cc": {
+    "es": "Por eso, proyectos como SLSA y FRSCA se han diseñado como un conjunto de normas con un enfoque concreto que se suman a los pasos descritos en in-toto. En ellos se especifican qué medidas son más importantes para la seguridad de la cadena de suministro de software y se exigen determinadas acciones.  ",
+    "fr": "C'est pourquoi des projets tels que SLSA et FRSCA s'appuient sur les étapes décrites sur in-toto pour définir un ensemble de règles bien définies. Ils précisent quelles mesures sont prioritaires pour la sécurité de la chaîne d'approvisionnement logicielle et rendent certaines d'entre elles obligatoires.  ",
+    "zh": "正因如此，像 SLSA 和 FRSCA 这样的项目，才是在 in-toto 步骤的基础上构建的一套具有明确立场的一套规则。它们指明了哪些措施对软件供应链安全更为重要，并强制要求采取某些措施。  ",
+    "vi": "Đó là lý do tại sao các dự án như SLSA và FRSCA được xây dựng dưới dạng một bộ quy tắc có quan điểm rõ ràng dựa trên các bước của in-toto. Chúng chỉ ra những hành động nào quan trọng hơn đối với an ninh chuỗi cung ứng phần mềm và yêu cầu thực hiện một số hành động cụ thể.  "
+  },
+  "f052976d35ec92c24b9296c1075dfc41e9026d59ba7cb57aed7fecc111859b46": {
+    "es": "Estos proyectos resuelven diferentes problemas a distintos niveles.  in-toto permite registrar información sobre tus pasos, garantizar que se apliquen las políticas correspondientes, gestionar la confianza en las claves, etc.  Marcos como SLSA y FRSCA utilizan in-toto como mecanismo para registrar y hacer cumplir un conjunto específico de políticas que dan lugar a cadenas de suministro más seguras.  ",
+    "fr": "Ces projets apportent des solutions à différents problèmes à différents niveaux.  in-toto vous permet de collecter des informations sur vos étapes, de garantir l'application des politiques qui s'y rapportent, de gérer la confiance des clés, etc.  Des frameworks tels que SLSA et FRSCA utilisent in-toto comme mécanisme permettant de collecter et d'appliquer un ensemble spécifique de politiques visant à renforcer la sécurité des chaînes d'approvisionnement.  ",
+    "zh": "这些项目在不同层面上解决着不同的问题。in-toto 允许您记录相关步骤的信息、确保相关策略得到执行、处理密钥的可信度等。SLSA 和 FRSCA 等框架则利用 in-toto 作为一种机制，用于记录和执行一组特定的策略，从而构建更安全的供应链。  ",
+    "vi": "Các dự án này đang giải quyết những vấn đề khác nhau ở các cấp độ khác nhau.  in-toto cho phép bạn thu thập thông tin về các bước thực hiện, đảm bảo các chính sách liên quan được áp dụng, quản lý mức độ tin cậy của các khóa, v.v.  Các khung công tác như SLSA và FRSCA sử dụng in-toto như một cơ chế để thu thập và thực thi một bộ chính sách cụ thể, từ đó giúp chuỗi cung ứng trở nên an toàn hơn.  "
+  },
+  "11680b1371755063ac1e069e334f2f53dd31e9732a11000bad6e8511e6bee8bd": {
+    "es": "Se están realizando esfuerzos para que las herramientas automatizadas de SLSA y FRSCA funcionen con in-toto y layouts y validen el cumplimiento de los requisitos. Cuando estas herramientas alcancen la madurez, podrán integrarse para analizar un documento de SBOMit y proporcionar el nivel de puntuación adecuado para la cadena de suministro de software descrita en él. De este modo, un usuario podrá configurar su sistema para que solo acepte software de SLSA de nivel 4 o superior, que además cuente con un documento válido de SBOMit.",
+    "fr": "Des efforts sont actuellement déployés pour permettre aux outils automatisés destinés aux sites SLSA et FRSCA de fonctionner sur in-toto et layouts, et de valider la conformité. Lorsque ces outils auront atteint leur maturité, ils pourront être intégrés pour analyser un document SBOMit et attribuer le niveau de notation approprié à la chaîne d'approvisionnement logicielle qui y est décrite. Ainsi, un utilisateur pourra alors configurer son système pour n'accepter que des logiciels classés au niveau 4 ou supérieur sur SLSA, et disposant également d'un document SBOMit valide.",
+    "zh": "目前正在努力使针对 SLSA 和 FRSCA 的自动化工具能够在 in-toto layouts 上运行，并验证合规性。当这些工具成熟后，即可将其集成以解析 SBOMit 文档，并为其中描述的软件供应链提供相应的评分等级。因此，用户随后可配置其系统，仅接受 SLSA 评分等级为 4 级或更高的软件，且该软件还需具备有效的 SBOMit 文档。",
+    "vi": "Hiện đang có những nỗ lực nhằm phát triển các công cụ tự động cho SLSA và FRSCA để chúng có thể hoạt động trên in-toto layouts và xác minh sự tuân thủ. Khi các công cụ này đạt đến độ chín muồi, chúng có thể được tích hợp để phân tích tài liệu SBOMit và cung cấp mức điểm đánh giá phù hợp cho chuỗi cung ứng phần mềm được mô tả trong đó. Do đó, người dùng có thể cấu hình hệ thống của mình để chỉ chấp nhận phần mềm đạt mức 4 trở lên theo tiêu chuẩn SLSA, đồng thời phải có tài liệu SBOMit hợp lệ."
+  },
+  "bfbff93a614ca1944abd6bbcac9d87a7eb85c945dcbf60cf20142a0861248d25": {
+    "es": "## ¿Qué ocurre si es necesario modificar un documento de «SBOMit» con el paso del tiempo? Por ejemplo, para afirmar que no presenta una determinada vulnerabilidad explotable, o para añadir posteriormente información complementaria que no era necesaria en el momento de su creación, etc.",
+    "fr": "## Que se passe-t-il si un document «SBOMit» doit être modifié au fil du temps ? Par exemple, pour affirmer qu’il ne présente pas une certaine vulnérabilité exploitable, ou pour ajouter ultérieurement des informations complémentaires qui n’étaient pas nécessaires au moment de sa création, etc.",
+    "zh": "## 如果一份《SBOMit》文档需要随着时间的推移进行修改，该怎么办？例如，声明该文档不存在某项可被利用的漏洞，或在后续添加创建时未涉及的补充信息等。",
+    "vi": "## Nếu một tài liệu “SBOMit” cần được điều chỉnh theo thời gian thì sao? Ví dụ: khẳng định rằng tài liệu đó không chứa một lỗ hổng bảo mật nào có thể bị khai thác, bổ sung thông tin sau này mà lúc ban đầu chưa cần thiết, v.v."
+  },
+  "2766adffafe61c9e88f0491822e12ad6bf5e8bb6787d06de9d5876d684fbcde4": {
+    "es": "Un documento SBOMit puede contener una serie de «addendums» a posteriori. Estos se añaden posteriormente y deben ser firmados en última instancia con la clave maestra del documento original SBOMit. Sirven para modificar los distintos campos del documento SBOMit o para añadir información complementaria.  ",
+    "fr": "Un document « SBOMit » peut comporter une série d’addendums a posteriori. Celles-ci sont ajoutées après coup et doivent être signées, en dernier ressort, par la clé principale du document « SBOMit » d’origine. Elles servent à modifier les différents champs du document « SBOMit » ou à ajouter des informations complémentaires.  ",
+    "zh": "一份SBOMit文档可能包含一系列事后添加的addendums。这些证书是在事后添加的，最终必须由原始SBOMit文档的主密钥进行签名。它们用于修改SBOMit文档中的各个字段或添加补充信息。  ",
+    "vi": "Một tài liệu SBOMit có thể chứa một loạt các bản ghi bổ sung (addendums) được thêm vào sau khi tài liệu đã được tạo. Những bản ghi này được thêm vào sau khi tài liệu đã được tạo và cuối cùng phải được ký bằng khóa chính (master key) của tài liệu gốc SBOMit. Chúng có chức năng sửa đổi các trường khác nhau trong tài liệu SBOMit hoặc bổ sung thông tin.  "
+  },
+  "8ff52ba74be9d5b497e6bf70e1c488ba0583e607fdf1cb1d306daf76fc4792e3": {
+    "es": "Utilizar addendums en lugar de crear un nuevo documento SBOMit tiene una ventaja. De esta forma, tanto el documento original como cualquier addendums serán verificables y el historial de estos cambios quedará recogido íntegramente en el documento SBOMit. Por lo tanto, addendums es el modelo recomendado para gestionar los cambios en un documento SBOMit.",
+    "fr": "L'utilisation d'un document « addendums » plutôt que la création d'un nouveau document « SBOMit » présente un avantage. De cette manière, tant le document d'origine que toute modification apportée à celui-ci (addendums) seront vérifiables, et l'historique de ces modifications sera entièrement conservé dans le document « SBOMit ». Ainsi, les documents « addendums » constituent le modèle recommandé pour gérer les modifications apportées à un document « SBOMit ».",
+    "zh": "使用addendums而非创建新的SBOMit文档具有一定优势。这样一来，原始文档和任何addendums都将可验证，且这些更改的历史记录均包含在SBOMit文档中。因此，addendums是处理SBOMit文档更改的推荐模式。",
+    "vi": "Việc sử dụng addendums thay vì tạo một tài liệu mới tại SBOMit mang lại một lợi thế.  Bằng cách này, cả tài liệu gốc lẫn bất kỳ bản addendums nào cũng sẽ có thể kiểm chứng được, và lịch sử của những thay đổi này đều được lưu giữ trong tài liệu SBOMit.  Do đó, addendums là mô hình được khuyến nghị để xử lý các thay đổi đối với tài liệu SBOMit."
+  },
+  "4b364ffccd4a03baec52a1a8fc8fdfb350fae0629aba40d127a61a2570df9343": {
+    "es": "## ¿Puedo obtener un documento «SBOM» a partir de un documento «SBOMit»?",
+    "fr": "## Puis-je créer une «SBOM » à partir d'un document « SBOMit » ?",
+    "zh": "## 我能否从一个 SBOMit 文档中生成一个 SBOM 文档？",
+    "vi": "## Tôi có thể tạo một tệp SBOM từ một tệp SBOMit không?"
+  },
+  "0b5d25d888c35f666ecb00bf9c2b646adf8aac2ede7ae852fe6f97363032be42": {
+    "es": "¡Sí! Se están desarrollando varias herramientas que permitirán obtener un documento «SBOM» a partir de un documento «SBOMit». Puedes obtener un documento «SBOMs» en diversos formatos utilizando diferentes herramientas.",
+    "fr": "Oui ! Plusieurs outils sont en cours de développement et permettront de générer un fichier «SBOM» à partir d'un document «SBOMit». Vous pouvez obtenir des fichiers «SBOMs» dans divers formats en utilisant ces différents outils.",
+    "zh": "没错！目前正在开发多种工具，这些工具能够从 SBOMit 文档中生成 SBOM 文件。您可以通过使用不同的工具，以多种不同的格式获取 SBOMs 文件。",
+    "vi": "Đúng vậy! Hiện đang có nhiều công cụ đang được phát triển, cho phép trích xuất tệp định dạng “SBOM” từ tài liệu “SBOMit”. Bạn có thể tải xuống tệp “SBOMs” dưới nhiều định dạng khác nhau bằng cách sử dụng các công cụ này."
+  },
+  "d3e7f906796c7f12298b0b18cdb6d9c1720dd0309ce4f82ec2e5505ba2d9e343": {
+    "es": "Comunidad",
+    "fr": "Communauté",
+    "zh": "社区",
+    "vi": "Cộng đồng"
+  },
+  "b32e8f93ab9eec718a3ca631a924ded2e4e3afc66757edc241de02bbca5e1f4b": {
+    "es": "**SBOMit** es un proyecto comunitario abierto desarrollado en el marco del Grupo de Trabajo sobre Herramientas de Seguridad\nde la OpenSSF. Damos la bienvenida a colaboradores, usuarios y a cualquier persona interesada\nen mejorar la fiabilidad de las cadenas de suministro de software.",
+    "fr": "**SBOMit** est un projet communautaire ouvert développé dans le cadre du groupe de travail « Security\nTooling » de l'OpenSSF. Nous invitons les contributeurs, les utilisateurs et toute personne intéressée\npar l'amélioration de la fiabilité des chaînes d'approvisionnement logicielles à nous rejoindre.",
+    "zh": "**SBOMit** 是一个在 OpenSSF 安全\n工具工作组框架下开发的开源社区项目。我们欢迎贡献者、用户以及任何\n希望提升软件供应链可信度的朋友参与。",
+    "vi": "**SBOMit** là một dự án cộng đồng mở được phát triển trong khuôn khổ Nhóm công tác về Công cụ bảo mật\ncủa Hiệp hội Phần mềm Mở (OpenSSF). Chúng tôi hoan nghênh các nhà đóng góp, người dùng và bất kỳ ai quan tâm\nđến việc nâng cao độ tin cậy của chuỗi cung ứng phần mềm."
+  },
+  "4fe84e291a3c55f5411f5a1febbcf139d429e74b0aaff1c2b179f0bd647e28f3": {
+    "es": "## Reuniones",
+    "fr": "## Réunions",
+    "zh": "## 会议",
+    "vi": "## Các cuộc họp"
+  },
+  "a6c064704800d9a7c9ca83a99817b63471984bd955a359cc01eb39d5e17c2115": {
+    "es": "- Horario: Todos los miércoles a las 11:00 h, hora del Este de EE. UU.\n  [Enlace a la reunión de Zoom](https://nyu.zoom.us/j/91097299041)\n- [Notas de la reunión](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "fr": "- Horaires : tous les mercredis à 11 h, heure de la côte Est des États-Unis\n  [Lien vers la réunion Zoom](https://nyu.zoom.us/j/91097299041)\n- [Compte-rendu de la réunion](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "zh": "- 时间安排：每周三美国东部时间上午11:00\n  [Zoom会议链接](https://nyu.zoom.us/j/91097299041)\n- [会议记录](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "vi": "- Lịch trình: Mỗi thứ Tư lúc 11:00 sáng theo Giờ Miền Đông Hoa Kỳ\n  [Liên kết cuộc họp Zoom](https://nyu.zoom.us/j/91097299041)\n- [Biên bản cuộc họp](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)"
+  },
+  "917160448f516493c91bf76f39557e56ff81a2ab080fe406f3d74886f7c88c79": {
+    "es": "## ¡Conoce a los responsables del mantenimiento!",
+    "fr": "## Découvrez les responsables de la maintenance !",
+    "zh": "## 认识维护者们！",
+    "vi": "## Hãy làm quen với các nhà duy trì!"
+  },
+  "cb231a7f0171e5148989d48cf0cd0f5d276e7b9dc3e5202353b5bf07c8c3ae12": {
+    "es": "- [Responsables del mantenimiento](https://github.com/ SBOMit /specification/blob/main/MAINTAINERS.md)",
+    "fr": "- [Responsables](https://github.com/ SBOMit /specification/blob/main/MAINTAINERS.md)",
+    "zh": "- [维护者](https://github.com/ SBOMit /specification/blob/main/MAINTAINERS.md)",
+    "vi": "- [Nhóm quản trị](https://github.com/ SBOMit /specification/blob/main/MAINTAINERS.md)"
+  },
+  "044a5294c8948ba43d9d83fb58ceda111d855ea5d835218562c089f347de3110": {
+    "es": "## ¡Únete a nuestro Slack!",
+    "fr": "## Rejoignez notre canal Slack !",
+    "zh": "## 加入我们的 Slack 频道吧！",
+    "vi": "## Hãy tham gia Slack của chúng tôi!"
+  },
+  "63b977163875cba5a5ef21eb24dc138c0954d126226c56ad06abc44ab0c3ff59": {
+    "es": "- Haz clic en el icono de Slack que aparece en la parte inferior de la página\n- Añade estos dos canales: `#SBOMit` y `#sig-SBOM-everywhere`",
+    "fr": "- Cliquez sur l'icône Slack en bas de la page\n- Ajoutez ces deux canaux : `#SBOMit` et `#sig-SBOM-everywhere`",
+    "zh": "- 点击页面底部的 Slack 图标\n- 添加以下两个频道：`#SBOMit` 和 `#sig-SBOM-everywhere`",
+    "vi": "- Nhấp vào biểu tượng Slack ở cuối trang\n- Thêm hai kênh sau: `#SBOMit` và `#sig-SBOM-everywhere`"
+  },
+  "36cf5318622a698f71c320c1dc09aa04f48da5a62d2920927b94c11cc9f2c3a8": {
+    "es": "Documentación",
+    "fr": "Documentation",
+    "zh": "文档",
+    "vi": "Tài liệu hướng dẫn"
+  },
+  "6dfdf8be9b4a81c0aa420d7478280be403712cc7681e178017414804fb000570": {
+    "es": "Aquí se publicará la documentación sobre la especificación «SBOMit», las herramientas y las implementaciones de referencia.",
+    "fr": "La documentation relative à la spécification «SBOMit», aux outils et aux implémentations de référence\nsera disponible ici.",
+    "zh": "SBOMit规范、工具及参考\n实现的相关文档将发布于此。",
+    "vi": "Tài liệu về đặc tả, công cụ và các bản triển khai tham chiếu\ncủa Giao thức Giao tiếp Mạng (SBOMit) sẽ được đăng tải tại đây."
+  },
+  "0f5f2caaff66caf197381c2b99270bbc922b79c60af60694dfa948cdfe93f4df": {
+    "es": "Mientras tanto, la fuente oficial es el\n[repositorio de especificaciones de SBOMit](https://github.com/SBOMit/specification).",
+    "fr": "En attendant, la source faisant autorité est le\n[référentiel des spécifications de SBOMit](https://github.com/SBOMit/specification).",
+    "zh": "与此同时，权威来源是\n[SBOMit 规范库](https://github.com/ SBOMit /specification)。",
+    "vi": "Trong khi đó, nguồn thông tin chính thức là\n[kho lưu trữ các tiêu chuẩn SBOMit](https://github.com/SBOMit/specification)."
+  },
+  "2c0c67a45f4fe8983ca82d8f5f44221aec48a48e1c1c1217e6e58112a5c6bada": {
+    "es": "## Primeros pasos",
+    "fr": "## Pour commencer",
+    "zh": "## 入门指南",
+    "vi": "## Bắt đầu"
+  },
+  "e26ae610f44058f963943a7f65a3dd396b6bff515fe31e67fffab6fa258de1d2": {
+    "es": "El contenido estará disponible próximamente.",
+    "fr": "Contenu à venir.",
+    "zh": "内容即将发布。",
+    "vi": "Nội dung sẽ sớm được cập nhật."
+  },
+  "3fce7c55d1a67f506f1c9897e9c89b58eb9281086abb60d71744dad4afe3bb2a": {
+    "es": "## Especificaciones",
+    "fr": "## Caractéristiques techniques",
+    "zh": "## 规格",
+    "vi": "## Thông số kỹ thuật"
+  },
+  "559ef6a25a4b7d94f01a231769d538d2a8112776cdd09a717168abb148dddbaf": {
+    "es": "## Herramientas",
+    "fr": "## Outillage",
+    "zh": "## 工装",
+    "vi": "## Dụng cụ gia công"
+  },
+  "6d4334f742a59b7c78a3644cae472a414e235909404eec1fb2f11aace80420af": {
+    "es": "Lista de componentes de software en in-toto (SBOMit)",
+    "fr": "Liste des composants logiciels sur in-toto (SBOMit)",
+    "zh": "in-toto 上的软件物料清单 (SBOMit)",
+    "vi": "Danh mục thành phần phần mềm trên in-toto (SBOMit)"
+  },
+  "c5839c838564f32828fd4587992692c8eb5997604dbe2b048792a3c8a6cfab17": {
+    "es": "La especificación «SBOMit» es un método independiente del formato «SBOM» para certificar componentes con\ninformación de verificación adicional. Estos «attestation» se generan en el momento en que se crea la cadena de suministro.",
+    "fr": "La spécification «SBOMit» est une méthode indépendante du format «SBOM» permettant d’attester des composants à l’aide d’\ninformations de vérification supplémentaires. Ces «attestation» sont générées au moment de la création de la chaîne d’approvisionnement.",
+    "zh": "SBOMit规范是一种SBOM的、与格式无关的方法，用于通过\n附加验证信息对组件进行认证。这些attestation是在生成供应链时生成的。",
+    "vi": "Tiêu chuẩn “SBOMit” là một phương pháp không phụ thuộc vào định dạng “SBOM” nhằm xác thực các thành phần kèm theo\nthông tin xác minh bổ sung. Các thông tin xác minh bổ sung này (attestation) được tạo ra tại thời điểm chuỗi cung ứng được thiết lập."
+  },
+  "e7c74f39f9382604ad89c0ff86c0783e52364163545693e0029a8c1f3ef2969c": {
+    "es": "Esta información de verificación, que utiliza in-toto, attestations y layouts, puede ser validada por\nuna parte para obtener un alto grado de garantía sobre el software.",
+    "fr": "Ces informations de vérification, qui s'appuient sur les sites in-toto, attestations et layouts, peuvent être validées par\nune tierce partie afin d'obtenir un niveau élevé d'assurance concernant le logiciel.",
+    "zh": "该验证信息使用了 in-toto、attestations 和 layouts，相关方可通过验证该信息，\n从而对该软件获得高度的保证。",
+    "vi": "Thông tin xác minh này, sử dụng các địa chỉ in-toto, attestations và layouts, có thể được một bên liên quan xác thực\nđể đạt được mức độ đảm bảo cao về phần mềm."
+  },
+  "d07b1cef50c5863518cb79f805a969be468d688caf5185a3e355f9ac6b8c460d": {
+    "es": "Preguntas frecuentes",
+    "fr": "FAQ",
+    "zh": "常见问题解答",
+    "vi": "Câu hỏi thường gặp"
+  },
+  "c49ae6e3f02ff33db737233deef77fa7a267f62d5a069bafaaf5007ae8bdc36c": {
+    "es": "## ¿Qué es «SBOMit»?",
+    "fr": "## Qu'est-ce que «SBOMit » ?",
+    "zh": "## 什么是SBOMit？",
+    "vi": "## “SBOMit” là gì?"
+  },
+  "88eaa5802b316659b6b7398650f10a3b019d2cd0fd9f0387e40619446bd501d6": {
+    "es": "SBOMit Es el nombre del proyecto que gestiona el formato de especificación «SBOMit». Un documento «SBOMit» es, en la práctica, un «SBOM», pero con información de verificación adicional que se generó en el momento en que se creó la cadena de suministro. Esta información de verificación, que utiliza in-toto, attestations y layouts, puede ser validada por una parte para obtener un alto grado de garantía sobre el software.",
+    "fr": "SBOMit C'est le nom du projet qui gère le format de spécification «SBOMit». Un document «SBOMit» correspond en réalité à un «SBOM», auquel ont été ajoutées des informations de vérification générées au moment de la création de la chaîne d'approvisionnement. Ces informations de vérification, qui s'appuient sur les sites in-toto, attestations et layouts, peuvent être validées par une partie prenante afin d'obtenir un niveau élevé d'assurance concernant le logiciel.",
+    "zh": "SBOMit 这是管理“SBOMit”规范格式的项目名称。SBOMit文档实质上就是SBOM，只是额外添加了在生成供应链时生成的验证信息。该验证信息采用in-toto、attestations和layouts，相关方可对其进行验证，从而获得关于该软件的高可信度保证。",
+    "vi": "SBOMit là tên của dự án quản lý định dạng thông số kỹ thuật “SBOMit”. Một tài liệu “SBOMit” thực chất là một “SBOM”, chỉ khác là được bổ sung thêm thông tin xác minh được tạo ra tại thời điểm xây dựng chuỗi cung ứng. Thông tin xác minh này, sử dụng các tiêu chuẩn in-toto, attestations và layouts, có thể được một bên liên quan xác thực để đạt được mức độ đảm bảo cao về phần mềm."
+  },
+  "4f83525350af40f99a89a36e4a40b97187dec04c468234f3e45254ebad87d705": {
+    "es": "## ¿Qué contiene un documento «SBOMit» y por qué?",
+    "fr": "## Que contient un document « SBOMit » et pourquoi ?",
+    "zh": "## 《SBOMit》文件包含哪些内容？原因是什么？",
+    "vi": "## Tài liệu “SBOMit” bao gồm những nội dung gì và tại sao?"
+  },
+  "369706cd922079470efe26af2d37aef5996f7a5c085c33b2e188c16b0c20aba1": {
+    "es": "Un documento «SBOMit» es un documento firmado que consta de varios componentes diferentes.  ",
+    "fr": "Un document «SBOMit» est un document signé composé de plusieurs éléments distincts.  ",
+    "zh": "SBOMit文档是一份经过签名的文档，由几个不同的组成部分构成。  ",
+    "vi": "Tài liệu “SBOMit” là một tài liệu đã được ký tên, bao gồm một số thành phần khác nhau.  "
+  },
+  "78d569a69d726883c8f1c88c0187f2014e998567fedc8ce193ed180caaac86da": {
+    "es": "En primer lugar, contiene una serie de archivos in-toto attestations que se generaron durante el desarrollo del software descrito. Esto incluye información detallada sobre las diferentes etapas de la cadena de suministro del software, como el sistema de control de versiones, el proceso de compilación, las pruebas unitarias, las dependencias utilizadas, el fuzzing, las comprobaciones de cumplimiento de licencias, el empaquetado, etc.  Por ejemplo, el sistema de compilación utilizado para compilar el software en SBOM cuenta con in-toto metadata, donde figuran los nombres y los hash seguros de los archivos extraídos del sistema de control de versiones (VCS) para su compilación, los nombres y los hash seguros de los archivos creados durante la compilación, una serie de datos sobre el compilador y una firma generada por una clave privada en poder del compilador.",
+    "fr": "Tout d’abord, il contient une série de fichiers «in-toto » (attestations) générés au fur et à mesure du développement du logiciel décrit. Ces fichiers contiennent des informations détaillées sur les différentes étapes de la chaîne de développement du logiciel, notamment sur le système de contrôle de version, le processus de compilation, les tests unitaires, les dépendances utilisées, le fuzzing, les vérifications de conformité des licences, le packaging, etc.  Par exemple, le système de compilation utilisé pour compiler le logiciel dans l’SBOM contient in-toto metadata avec les noms et les hachages sécurisés des fichiers extraits du système de contrôle de version (VCS) pour être compilés, les noms et les hachages sécurisés des fichiers créés lors de la compilation, une série d’informations sur le compilateur, ainsi qu’une signature générée par une clé privée détenue par le compilateur.",
+    "zh": "首先，它包含了一系列在开发所述软件过程中生成的 in-toto attestations 文件。其中包含关于软件供应链各阶段的详细信息，包括版本控制系统、构建流程、单元测试、所用依赖项、模糊测试、许可合规性检查、打包等。  例如，用于在 SBOM 编译软件的构建系统包含 in-toto metadata，其中记录了从版本控制系统（VCS）中提取待编译文件的名称和安全哈希值、编译过程中生成的文件的名称和安全哈希值、关于编译器的一系列信息，以及由编译器持有的私钥所签署的签名。",
+    "vi": "Trước hết, nó chứa một loạt các tệp nhật ký xây dựng (in-toto) attestations được tạo ra trong quá trình phát triển phần mềm như đã mô tả. Điều này bao gồm thông tin chi tiết về các bước khác nhau trong chuỗi cung ứng phần mềm, bao gồm hệ thống kiểm soát phiên bản, quy trình xây dựng, kiểm thử đơn vị, các phụ thuộc được sử dụng, kiểm thử fuzzing, kiểm tra tuân thủ giấy phép, đóng gói, v.v.  Ví dụ, hệ thống xây dựng được sử dụng để biên dịch phần mềm trong SBOM có in-toto metadata với tên và hàm băm an toàn của các tệp được lấy từ VCS để biên dịch, tên và hàm băm an toàn của các tệp được tạo ra trong quá trình biên dịch, một loạt thông tin về trình biên dịch, và chữ ký bằng khóa riêng do trình biên dịch nắm giữ."
+  },
+  "9672fead62a79c578013c0901c5ecc9cc1f890a8e07fd253278672c98ee88df4": {
+    "es": "Esta información attestation puede utilizarse en coordinación con el segundo punto del documento SBOMit: un in-toto layout. El in-toto layout está firmado por el responsable del proyecto y describe cómo debe ser una attestation metadata válida para el proyecto. El layout especifica las claves privadas de las partes que llevan a cabo el attestations, así como la forma en que se interconectan los pasos.  Por ejemplo, el VCS debe tener una etiqueta git firmada, sobre la que luego opera el sistema de compilación.  Los archivos compilados por el sistema de compilación deben ser los que se han sometido a las pruebas unitarias, las cuales deben haber superado con éxito.   Es importante destacar que un «in-toto» (layout) proporciona una política legible por máquina que puede validar el «in-toto» (attestations) para garantizar que se han seguido todos esos pasos, en el orden correcto, sobre los elementos adecuados y sin que se haya añadido, omitido ni eliminado nada.",
+    "fr": "Ces informations relatives à l’attestation peuvent être utilisées en coordination avec le deuxième élément du document « SBOMit » : l’« in-toto » layout. Le document « in-toto » layout est signé par le responsable du projet et décrit à quoi ressemble une « attestation » metadata valide pour le projet. Le fichier « layout » spécifie les clés privées des parties intervenant dans le processus de validation (attestations), ainsi que la manière dont les différentes étapes s’enchaînent. Par exemple, le système de contrôle de version (VCS) doit disposer d’une balise Git signée, sur laquelle le système de compilation opère ensuite. Les fichiers compilés par le système de compilation doivent être ceux qui ont été soumis aux tests unitaires, lesquels doivent avoir été réussis.   Il est important de noter qu’un « in-toto » (layout) fournit une politique lisible par machine capable de valider le « in-toto » (attestations) afin de garantir que toutes ces étapes ont été suivies, dans le bon ordre, sur les bons éléments, et sans qu’aucun élément n’ait été ajouté, ignoré ou supprimé.",
+    "zh": "该 attestation 中的信息可与 SBOMit 文档中的第二项配合使用：即 in-toto layout。该 in-toto layout 由项目所有者签署，并描述了该项目有效的 attestation metadata 应具备的特征。 layout 指定了执行 attestations 的各方的私钥，以及各步骤之间的衔接方式。例如，版本控制系统（VCS）必须拥有一个已签名的 Git 标签，构建系统随后将基于该标签进行操作。由构建系统编译的文件必须是已通过单元测试的文件，且这些测试必须已通过。   重要的是，in-toto layout 提供了一份机器可读的策略，该策略可验证 in-toto attestations，以确保所有步骤均按正确顺序、针对正确对象执行，且未添加、跳过或删除任何内容。",
+    "vi": "Thông tin tại attestation có thể được sử dụng kết hợp với mục thứ hai trong tài liệu SBOMit: một in-toto layout.  Tài liệu in-toto layout được ký bởi chủ sở hữu dự án và mô tả các attestation metadata hợp lệ cho dự án trông như thế nào. Tài liệu \"layout\" quy định các khóa riêng tư cho các bên thực hiện quy trình \"attestations\" cũng như cách các bước này liên kết với nhau. Ví dụ, hệ thống kiểm soát phiên bản (VCS) phải có một thẻ Git đã được ký, mà hệ thống xây dựng sau đó sẽ thao tác trên đó. Các tệp được hệ thống xây dựng biên dịch phải là những tệp đã được chạy qua các bài kiểm tra đơn vị (unit tests), và các bài kiểm tra này phải đã qua.   Điều quan trọng là, Chính sách Kiểm tra Tích hợp (in-toto) layout cung cấp một chính sách có thể đọc được bởi máy tính, có thể xác thực Quy trình Xây dựng (in-toto) attestations để đảm bảo rằng tất cả các bước đó đã được thực hiện đúng thứ tự, trên các mục đúng, và không có gì được thêm vào, bỏ qua hoặc loại bỏ."
+  },
+  "be266b098589335a12f9603e2640c743dadb13231b62d85916474ef933e2a89c": {
+    "es": "El elemento final que siempre aparece en el documento SBOMit es la información complementaria SBOM. Esta información, junto con in-toto, attestations y in-toto, layout, puede utilizarse para generar un SBOM real en diversos formatos. La información complementaria SBOM puede incluir datos como el nombre de la empresa u otra información que no figura en in-toto, pero que es conveniente incluir en el SBOM resultante.  De este modo, un documento SBOM generado a partir de un documento SBOMit puede incluir información complementaria que no formaba parte del proceso in-toto.",
+    "fr": "Le dernier élément qui figure systématiquement dans le document SBOMit est l’information complémentaire SBOM. Ces informations, associées à celles disponibles sur in-toto, attestations et in-toto, layout, peuvent être utilisées pour générer un SBOM complet dans divers formats. L’information complémentaire SBOM peut inclure des éléments tels que le nom de l’entreprise ou d’autres renseignements qui ne figurent pas sur in-toto, mais dont l’intégration dans le SBOM final est souhaitable.  De cette manière, un document SBOM généré à partir d’un document SBOMit peut inclure des informations supplémentaires qui ne faisaient pas partie du processus de in-toto.",
+    "zh": "SBOMit文档中始终出现的最后一项是补充信息SBOM。该信息可与in-toto、attestations以及in-toto、layout结合使用，以生成多种格式的实际SBOM。补充信息SBOM可能包括公司名称或其他未被in-toto包含、但希望纳入最终生成的SBOM中的信息。  通过这种方式，由SBOMit文档生成的SBOM，可以包含in-toto处理过程中未涉及的补充信息。",
+    "vi": "Mục cuối cùng luôn xuất hiện trong tài liệu SBOMit là thông tin bổ sung SBOM. Thông tin này cùng với in-toto attestations và in-toto layout có thể được sử dụng để tạo ra một SBOM thực tế dưới nhiều định dạng khác nhau. Thông tin bổ sung SBOM có thể bao gồm các nội dung như tên công ty hoặc các thông tin khác không được đề cập trong in-toto nhưng cần được đưa vào SBOM kết quả.  Như vậy, một tệp SBOM được tạo ra từ tài liệu SBOMit có thể bao gồm thông tin bổ sung không thuộc phần của quy trình in-toto."
+  },
+  "c7fc8f40b7eefd3f0c7a35a8a069f03e9f015cf5ffd7f8e3be258342185eb76c": {
+    "es": "También existe una forma de añadir un archivo «addendums» a un documento «SBOMit», que se describirá más adelante.",
+    "fr": "Il existe également un moyen d'ajouter un fichier « addendums » à un document « SBOMit », qui sera décrit plus loin.",
+    "zh": "此外，还有一种方法可以在SBOMit文档中添加addendums，相关内容将在后面介绍。",
+    "vi": "Ngoài ra, còn có một cách để thêm addendums vào tài liệu SBOMit, điều này sẽ được trình bày chi tiết hơn ở phần sau."
+  },
+  "88a56c4aff1e3748a67217349483f7eacfa91a5f236f6380373ae930c4522cc3": {
+    "es": "## ¿Cuáles son las ventajas de un documento «SBOMit» frente al uso de una herramienta de generación «SBOM» que analiza el software?",
+    "fr": "## Quels sont les avantages d'un document « SBOMit » par rapport à l'utilisation d'un outil de génération de « SBOM » qui analyse le logiciel ?",
+    "zh": "## 与使用SBOM生成工具（该工具会扫描软件）相比，SBOMit文档有哪些优势？",
+    "vi": "## Tài liệu “SBOMit” có những ưu điểm gì so với việc sử dụng công cụ tạo mã “SBOM” dựa trên việc quét phần mềm?"
+  },
+  "868ddf4c4aaae5b5fb8fd58f4ce47afdef98436b7469ae5c09fc360a65a2da0f": {
+    "es": "Las herramientas de análisis, por su propia naturaleza, examinan un programa y tratan de determinar qué ocurrió anteriormente. Por su propia naturaleza, son imperfectas, ya que utilizan información incompleta para intentar reconstruir lo que ocurrió en el pasado. La experiencia práctica ha demostrado que diferentes herramientas de análisis ofrecen resultados muy dispares para un mismo programa.  ",
+    "fr": "De par leur nature même, les outils d'analyse examinent un logiciel pour tenter de déterminer ce qui s'est passé auparavant. Ils sont, par nature, imparfaits, car ils s'appuient sur des informations incomplètes pour tenter de reconstituer ce qui s'est passé dans le passé. L'expérience pratique a montré que différents outils d'analyse peuvent donner des résultats très divergents pour un même logiciel.  ",
+    "zh": "扫描工具的本质是分析一段软件代码，进而试图推断此前发生过什么。由于其本质，这类工具难免存在缺陷，因为它们是利用不完整的信息来尝试还原过去发生的情况。实际应用表明，针对同一款软件，不同的扫描工具得出的结果可能大相径庭。  ",
+    "vi": "Về bản chất, các công cụ quét sẽ phân tích một phần mềm và sau đó cố gắng xác định những gì đã xảy ra trước đó. Về bản chất, chúng không hoàn hảo vì sử dụng thông tin không đầy đủ để cố gắng khôi phục lại những gì đã xảy ra trong quá khứ. Thực tiễn đã cho thấy rằng các công cụ quét khác nhau có thể đưa ra kết quả hoàn toàn khác biệt khi phân tích cùng một phần mềm.  "
+  },
+  "511298a81ff38d821a6581ece0fa2de1a2807b0412baaa814e892644b0050410": {
+    "es": "Las secciones «in-toto» (",
+    "fr": "Les sections «in-toto» (attestation) d’un document «SBOMit» sont générées au moment où le logiciel est traité tout au long de la chaîne d’approvisionnement logicielle. Par conséquent, ces informations seront bien plus précises, car in-toto attestations recueillent des informations détaillées au moment même de la création du produit logiciel. Cela rend, par nature, un document «SBOMit» bien plus précis.",
+    "zh": "SBOMit 文档中的 in-toto attestation 部分是在软件通过软件供应链进行处理时生成的。因此，这些信息会更加准确，因为 in-toto attestations 会在软件产品制造过程中收集详细信息。这使得 SBOMit 文档从本质上来说更加准确。",
+    "vi": "Các phần in-toto attestation của tài liệu SBOMit được tạo ra tại thời điểm phần mềm được xử lý qua chuỗi cung ứng phần mềm. Do đó, thông tin này sẽ chính xác hơn rất nhiều vì in-toto attestations thu thập thông tin chi tiết ngay tại thời điểm sản phẩm phần mềm đang được phát triển. Điều này khiến tài liệu SBOMit trở nên chính xác hơn rất nhiều, do bản chất của nó."
+  },
+  "7847a1ef717fe7d23c19044af56f1a3d4c730db5448788d1fed1f564c75fbd92": {
+    "es": "## ¿Cuáles son las ventajas de un documento «SBOMit» frente a la simple firma de un «SBOM»?",
+    "fr": "## Quels sont les avantages d'un document « SBOMit » par rapport à la simple signature d'un « SBOM » ?",
+    "zh": "## 与直接签署《SBOM》相比，SBOMit文件有哪些优势？",
+    "vi": "## Những ưu điểm của văn bản “SBOMit” so với việc chỉ đơn thuần ký vào văn bản “SBOM” là gì?"
+  },
+  "eb5d591042acdd4455d980d9cdb9c0ffa9ec0c16399241179a34ca8ec69bbc46": {
+    "es": "Un «SBOM» firmado es una declaración firmada por una persona que posee la clave de firma de una organización y en la que se afirma que el «SBOM» es correcto. Si la clave es objeto de un robo, o si la parte que firma el «SBOM» se equivoca respecto a cómo se ha creado el software, entonces el «SBOM» será incorrecto.",
+    "fr": "Une «SBOM » signée est une déclaration signée par une personne détenant la clé de signature au sein d'une organisation, attestant que l'SBOM est exacte. Si la clé est volée, ou si la personne signant l'SBOM se trompe sur la manière dont le logiciel a été créé, alors l'SBOM sera inexacte.",
+    "zh": "一个经过签名的 SBOM 是由某组织中持有签名密钥的人员签署的声明，表明 SBOM 内容准确无误。如果密钥被盗，或者签署 SBOM 的方对软件的制作方式存在误解，那么 SBOM 的内容将不准确。",
+    "vi": "Một tệp “SBOM” đã được ký là một tuyên bố có chữ ký của người nắm giữ khóa ký tại một tổ chức, trong đó khẳng định rằng tệp “SBOM” là chính xác. Nếu khóa bị đánh cắp, hoặc bên ký tệp “SBOM” cung cấp thông tin không chính xác về cách phần mềm được phát triển, thì tệp “SBOM” sẽ không chính xác."
+  },
+  "023204497e10a1b91997a384d01d808c6f86e781856084d7b8c928133ca547a9": {
+    "es": "Un documento «SBOMit» contiene información sobre la gestión de la cadena de desarrollo (metadata), firmada criptográficamente, relativa a todos los pasos que se han seguido en la creación del software, y describe la política que debe respetarse.  Es mucho más difícil que pasen desapercibidas imprecisiones accidentales, como saltarse un paso (lo cual ha sido un problema habitual), o que se produzcan acciones maliciosas.  in-toto también ofrece una mayor capacidad para recuperarse de forma segura tras un ataque y para detectar y contrarrestar las acciones maliciosas de una parte dentro de una organización.",
+    "fr": "Un document « SBOMit » contient des metadatas signées cryptographiquement concernant toutes les étapes ayant conduit à la création du logiciel et décrit la politique à respecter.  Il est ainsi beaucoup plus difficile que des inexactitudes accidentelles, telles que l’omission d’une étape (ce qui a souvent posé problème par le passé), ou des actions malveillantes passent inaperçues.  La «in-toto » offre également une plus grande capacité à se remettre en toute sécurité d’une compromission, ainsi qu’à détecter et à contrer les actions malveillantes menées par un acteur au sein d’une organisation.",
+    "zh": "SBOMit文档包含经过加密签名的metadata，其中记录了软件开发过程中的所有步骤，并描述了必须遵循的政策。  像遗漏某个步骤（历史上这曾是一个问题）这样的无意疏漏，或是恶意行为，都更难不被察觉。in-toto 还提供了更强大的能力，既能安全地从系统遭入侵中恢复，又能检测并抵御组织内部某一方的恶意行为。",
+    "vi": "Một tài liệu “SBOMit” chứa các thông tin được ký số bằng thuật toán mã hóa (metadata) về tất cả các bước đã thực hiện trong quá trình phát triển phần mềm và mô tả chính sách mà các bên liên quan phải tuân thủ.  Việc các sai sót vô ý như bỏ qua một bước (điều này trước đây từng là một vấn đề) hoặc các hành động độc hại không bị phát hiện sẽ trở nên khó khăn hơn rất nhiều.  in-toto cũng cung cấp khả năng cao hơn để khôi phục an toàn sau khi hệ thống bị xâm phạm, đồng thời phát hiện và chống lại các hành động độc hại từ một bên nào đó trong tổ chức."
+  },
+  "e3d7429b58df0e8dd33f472857b473de680df612a60e0c40b6921439fbc57c22": {
+    "es": "Por poner un ejemplo, un certificado de autenticación (SBOM) hoy en día se parece mucho a la lista de ingredientes que aparece en un producto. Sin embargo, en la práctica, esta información suele ser inexacta, podría ser modificada por alguien con malas intenciones y no está verificada. Firmar un certificado de autenticación (SBOM) ayuda a evitar que sea modificado por alguien con malas intenciones, de modo que sabes que la lista de ingredientes que recibes ha sido aprobada por una empresa concreta.  Un documento de «SBOMit» (Declaración de conformidad) también describe detalladamente el proceso de fabricación del producto e incluye «metadata» y las firmas de todas las partes implicadas, incluida la verificación de que las claves utilizadas estaban vigentes en ese momento.  Por lo tanto, en el caso de un documento de «SBOMit», se tiene un alto grado de seguridad de que se han seguido las políticas y procedimientos adecuados.",
+    "fr": "Pour utiliser une analogie, une « SBOM » (déclaration de composition) correspond aujourd’hui en grande partie à la liste des ingrédients figurant sur un produit. Seulement, dans la pratique, ces informations sont souvent inexactes, peuvent être modifiées par une partie malveillante et ne font l’objet d’aucune vérification. La signature d’une « SBOM » permet d’empêcher toute modification par une partie malveillante, ce qui vous garantit que la liste des ingrédients qui vous est fournie a bien été approuvée par une entreprise spécifique.  Un document «SBOMit» décrit également en détail le processus de fabrication du produit et contient desmetadatas ainsi que les signatures de toutes les parties concernées, y compris la vérification que les clés utilisées étaient à jour à ce moment-là. Ainsi, dans le cas d’un document «SBOMit», vous disposez d’un haut degré de garantie que les politiques et procédures appropriées ont été respectées.",
+    "zh": "打个比方，如今的“SBOM”就如同产品上的成分表。只是实际上，这些信息通常并不准确，可能会被恶意方篡改，且未经核实。对“SBOM”进行签名有助于防止其被恶意方篡改，因此您可以确信所获得的成分表已获得特定公司的批准。  SBOMit文档还会详细描述产品的制造过程，并包含所有相关方的metadata和签名，其中包括对所用密钥在当时是否有效的验证。因此，对于SBOMit文档，您可以高度确信其制作过程遵循了正确的政策和程序。",
+    "vi": "Để lấy một ví dụ so sánh, ngày nay, “SBOM” (Tuyên bố thành phần) cũng giống như danh sách thành phần trên một sản phẩm. Tuy nhiên, trên thực tế, thông tin này thường không chính xác, có thể bị các bên có ý đồ xấu thay đổi và không được xác minh. Việc ký xác thực “SBOM” (Tuyên bố thành phần) giúp ngăn chặn việc thông tin này bị các bên có ý đồ xấu thay đổi, nhờ đó bạn có thể chắc chắn rằng danh sách thành phần mà bạn nhận được đã được một công ty cụ thể phê duyệt.  Tài liệu “SBOMit” cũng mô tả chi tiết quy trình sản xuất sản phẩm và bao gồm các thông tin xác thực (metadata) cùng chữ ký của tất cả các bên liên quan, bao gồm cả việc xác minh rằng các khóa được sử dụng là hợp lệ tại thời điểm đó. Do đó, đối với tài liệu “SBOMit”, bạn có mức độ đảm bảo cao rằng các chính sách và quy trình phù hợp đã được tuân thủ."
+  },
+  "14e956f595441f1bcabe830be436b393d4f6f6564534ccee61235b3e5328d6cb": {
+    "es": "Para obtener más información sobre este tema, consulta la sección [¿Qué ventajas ofrece in-toto?](https://in-toto.io/in-toto/) en la página web in-toto.",
+    "fr": "Pour plus d'informations à ce sujet, veuillez consulter la rubrique [Quels sont les avantages d'in-toto ?](https://in-toto.io/in-toto/) sur le site in-toto.",
+    "zh": "如需了解有关此主题的更多信息，请参阅in-toto网站上的[in-toto有哪些优势](https://in-toto.io/in-toto/)。",
+    "vi": "Để biết thêm thông tin về chủ đề này, vui lòng tham khảo bài viết [in-toto mang lại những lợi ích gì](https://in-toto.io/in-toto/) trên trang web in-toto."
+  },
+  "49d7f003c8126fbb765000641fb51bd36f7d81c92c582385228cebe027a43f89": {
+    "es": "## ¿Qué pasaría si la cadena de suministro de un software incluyera pasos poco seguros?  ",
+    "fr": "## Que se passe-t-il si la chaîne d'approvisionnement d'un logiciel comporte des étapes non sécurisées ?  ",
+    "zh": "## 如果软件供应链中存在不安全的环节，会怎样？  ",
+    "vi": "## Nếu chuỗi cung ứng phần mềm chứa các bước không an toàn thì sao?  "
+  },
+  "e5905b6e3285bd40c5537b81256240286cb1d317fc47ae717ecd958072023a11": {
+    "es": "in-toto attestations no sustituyen a la implementación de medidas de seguridad adecuadas en la cadena de suministro de software. Por ejemplo, si utilizas un proceso inseguro de compilación de software que simplemente utiliza la herramienta curl para descargar y compilar el software desde un sitio web, in-toto y layouts pueden registrar esta acción insegura y verificar el archivo firmado attestations, lo que indica que has realizado dicha acción insegura.  ",
+    "fr": "in-toto attestations ne remplacent pas la mise en place de mesures de sécurité adéquates tout au long de la chaîne logistique logicielle. Par exemple, si vous utilisez un processus de compilation non sécurisé qui se contente de récupérer et de compiler un logiciel à partir d’un site web, in-toto layouts peut répertorier cette action non sécurisée et vérifier la présence d’un fichier signé attestations indiquant que vous avez effectué cette action non sécurisée.  ",
+    "zh": "in-toto attestations 不能替代在软件供应链中采取适当的安全措施。例如，如果您使用一种不安全的软件构建流程，仅通过 curl 命令从网站下载并构建软件，in-toto layouts 可以列出这一不安全操作，并验证签名的 attestations，表明您执行了该不安全操作。  ",
+    "vi": "in-toto attestations không thể thay thế cho việc áp dụng các biện pháp bảo mật phù hợp trong chuỗi cung ứng phần mềm. Ví dụ, nếu bạn sử dụng quy trình xây dựng phần mềm không an toàn, chỉ đơn thuần sử dụng lệnh curl để tải và biên dịch phần mềm từ một trang web, thì in-toto và layouts có thể liệt kê hành động không an toàn này và xác minh tệp đã ký attestations, cho thấy rằng bạn đã thực hiện hành động không an toàn này.  "
+  },
+  "58a58d0b76c246353ea9547f27ed6f792521d5cf6cb6c19c47538328670de34b": {
+    "es": "Por eso, proyectos como SLSA y FRSCA se han diseñado como un conjunto de normas con una perspectiva concreta que se suman a los pasos descritos en in-toto. En ellos se especifican qué medidas son más importantes para la seguridad de la cadena de suministro de software y se exigen determinadas acciones.  ",
+    "fr": "C'est pourquoi des projets tels que SLSA et FRSCA s'appuient sur les étapes décrites sur in-toto pour définir un ensemble de règles bien définies. Ils précisent quelles mesures sont prioritaires pour la sécurité de la chaîne d'approvisionnement logicielle et rendent certaines d'entre elles obligatoires.  ",
+    "zh": "正因如此，像 SLSA 和 FRSCA 这样的项目，才是在 in-toto 步骤的基础上构建的一套具有明确立场的规则集。它们指明了哪些措施对软件供应链安全更为重要，并强制要求采取某些措施。  ",
+    "vi": "Đó là lý do tại sao các dự án như SLSA và FRSCA được xây dựng dưới dạng một bộ quy tắc có quan điểm rõ ràng, dựa trên các bước được nêu tại in-toto. Các dự án này chỉ ra những hành động nào quan trọng hơn đối với an ninh chuỗi cung ứng phần mềm và yêu cầu bắt buộc thực hiện một số hành động cụ thể.  "
+  },
+  "cb24d8f1bbb2711c5b9c02d9d0f78681941a50e0383b8a373838eecbf0eb16c6": {
+    "es": "Estos proyectos resuelven distintos problemas a distintos niveles.  in-toto permite registrar información sobre tus pasos, garantizar que se apliquen las políticas correspondientes, gestionar la confianza en las claves, etc.  Marcos como SLSA y FRSCA utilizan in-toto como mecanismo para registrar y hacer cumplir un conjunto específico de políticas que dan lugar a cadenas de suministro más seguras.  ",
+    "fr": "Ces projets apportent des solutions à différents problèmes à différents niveaux.  in-toto vous permet de collecter des informations sur vos étapes, de garantir l'application des politiques qui s'y rapportent, de gérer la confiance des clés, etc.  Des frameworks tels que SLSA et FRSCA utilisent in-toto comme mécanisme permettant de collecter et d'appliquer un ensemble spécifique de politiques visant à renforcer la sécurité des chaînes d'approvisionnement.  ",
+    "zh": "这些项目在不同层面上解决着不同的问题。in-toto 允许您记录相关步骤的信息、确保相关策略得到执行、处理密钥的可信度等。SLSA 和 FRSCA 等框架则利用 in-toto 作为一种机制，用于记录和执行一组特定的策略，从而构建更安全的供应链。  ",
+    "vi": "Các dự án này đang giải quyết những vấn đề khác nhau ở các cấp độ khác nhau.  in-toto cho phép bạn thu thập thông tin về các bước thực hiện, đảm bảo các chính sách liên quan được áp dụng, quản lý tính tin cậy của khóa, v.v.  Các khung công nghệ như SLSA và FRSCA sử dụng in-toto như một cơ chế để thu thập và thực thi một bộ chính sách cụ thể, từ đó giúp chuỗi cung ứng trở nên an toàn hơn.  "
+  },
+  "368632ab6228aacf408ff44072162ffc7239dc103f3a0c1f8aa3b9791068aa29": {
+    "es": "Se están realizando esfuerzos para que las herramientas automatizadas de SLSA y FRSCA funcionen con in-toto y layouts y validen el cumplimiento de los requisitos. Cuando estas herramientas alcancen la madurez, podrán integrarse para analizar un documento de SBOMit y proporcionar el nivel de puntuación adecuado para la cadena de suministro de software descrita en él. De este modo, un usuario podrá configurar su sistema para que solo acepte software de SLSA de nivel 4 o superior, que además cuente con un documento válido de SBOMit.",
+    "fr": "Des efforts sont actuellement déployés pour permettre aux outils automatisés destinés aux sites SLSA et FRSCA de fonctionner sur in-toto et layouts, et de valider la conformité. Lorsque ces outils auront atteint leur maturité, ils pourront être intégrés pour analyser un document SBOMit et attribuer le niveau de notation approprié à la chaîne logistique logicielle qui y est décrite. Ainsi, un utilisateur pourra alors configurer son système pour n’accepter que des logiciels classés au niveau 4 ou supérieur sur SLSA, et disposant également d’un document SBOMit valide.",
+    "zh": "目前正在努力使针对 SLSA 和 FRSCA 的自动化工具能够在 in-toto layouts 上运行，并验证合规性。当这些工具成熟后，即可将其集成以解析 SBOMit 文档，并为其中描述的软件供应链提供相应的评分等级。因此，用户随后可配置其系统，仅接受 SLSA 评分等级为 4 级或更高的软件，且该软件还需具备有效的 SBOMit 文档。",
+    "vi": "Hiện đang có những nỗ lực nhằm phát triển các công cụ tự động cho các tiêu chuẩn SLSA và FRSCA để chúng có thể hoạt động trên các nền tảng in-toto và layouts, đồng thời xác minh tính tuân thủ. Khi các công cụ này đạt đến độ chín muồi, chúng có thể được tích hợp để phân tích tài liệu SBOMit và cung cấp mức điểm đánh giá phù hợp cho chuỗi cung ứng phần mềm được mô tả trong đó. Nhờ đó, người dùng có thể cấu hình hệ thống của mình để chỉ chấp nhận phần mềm đạt mức 4 trở lên theo tiêu chuẩn SLSA, đồng thời phải có tài liệu SBOMit hợp lệ."
+  },
+  "d4f900e56485b89cc25966bf3fbd49754d9f93fe6079719f1cfd7b791ab886e1": {
+    "es": "## ¿Qué ocurre si es necesario modificar un documento de «SBOMit» con el paso del tiempo? Por ejemplo, para afirmar que no presenta una determinada vulnerabilidad explotable, o para añadir posteriormente información complementaria que no era necesaria en el momento de su creación, etc.",
+    "fr": "## Que se passe-t-il si un document «SBOMit» doit être modifié au fil du temps ? Par exemple, pour affirmer qu'il ne présente pas une certaine vulnérabilité exploitable, ou pour ajouter ultérieurement des informations complémentaires qui n'étaient pas nécessaires au moment de sa création, etc.",
+    "zh": "## 如果一份《SBOMit》文档需要随着时间的推移进行修改，该怎么办？例如，声明该文档不存在某项可被利用的漏洞，或在后续添加创建时未涉及的补充信息等。",
+    "vi": "## Nếu một tài liệu “SBOMit” cần được điều chỉnh theo thời gian thì sao? Ví dụ: khẳng định rằng tài liệu đó không chứa một lỗ hổng bảo mật nào có thể bị khai thác, bổ sung thông tin sau này mà lúc ban đầu chưa cần thiết, v.v."
+  },
+  "5ffe7d34ad62db3e74d4a7739cb2937a1b6fe39e3189fe00315fe30a96cd2cda": {
+    "es": "Un documento SBOMit puede contener una serie de «addendums» a posteriori. Estos se añaden con carácter retroactivo y deben ser firmados en última instancia con la clave maestra del documento original SBOMit. Sirven para modificar los distintos campos del documento SBOMit o para añadir información complementaria.  ",
+    "fr": "Un document « SBOMit » peut comporter une série d’addendums a posteriori. Celles-ci sont ajoutées après coup et doivent être signées, en dernier ressort, par la clé principale du document « SBOMit » d’origine. Elles servent à modifier les différents champs du document « SBOMit » ou à ajouter des informations complémentaires.  ",
+    "zh": "一份SBOMit文档可能包含一系列事后添加的addendums。这些证书是在事后添加的，最终必须由原始SBOMit文档的主密钥进行签名。它们用于修改SBOMit文档中的各个字段或添加补充信息。  ",
+    "vi": "Một tài liệu SBOMit có thể chứa một loạt các bản ghi bổ sung (addendums) được thêm vào sau khi tài liệu đã được tạo. Những bản ghi này được thêm vào sau khi tài liệu đã được tạo và cuối cùng phải được ký bằng khóa chính (master key) của tài liệu gốc SBOMit. Chúng có chức năng sửa đổi các trường khác nhau trong tài liệu SBOMit hoặc bổ sung thông tin.  "
+  },
+  "7138add4513d7dbd289dc82a94b285a591edc2b703c1557ff239aa27f2b742dc": {
+    "es": "Utilizar addendums en lugar de crear un nuevo documento SBOMit tiene una ventaja. De esta forma, tanto el documento original como cualquier addendums serán verificables y el historial de estos cambios quedará recogido íntegramente en el documento SBOMit. Por lo tanto, addendums es el modelo recomendado para gestionar los cambios en un documento SBOMit.",
+    "fr": "L'utilisation d'un document « addendums » plutôt que la création d'un nouveau document « SBOMit » présente un avantage. De cette manière, tant le document d'origine que toute modification apportée (addendums) seront vérifiables, et l'historique de ces modifications sera entièrement conservé dans le document « SBOMit ». Ainsi, les documents « addendums » constituent le modèle recommandé pour gérer les modifications apportées à un document « SBOMit ».",
+    "zh": "使用addendums而非创建新的SBOMit文档具有一定优势。这样一来，原始文档和任何addendums文件均可被验证，且这些更改的历史记录均包含在SBOMit文档中。因此，addendums是处理SBOMit文档更改的推荐模式。",
+    "vi": "Việc sử dụng addendums thay vì tạo một tài liệu mới tại SBOMit có một ưu điểm. Bằng cách này, cả tài liệu gốc lẫn bất kỳ bản addendums nào cũng sẽ có thể kiểm chứng được, và lịch sử của các thay đổi này đều được lưu giữ trong tài liệu SBOMit. Do đó, addendums là mô hình được khuyến nghị để xử lý các thay đổi đối với tài liệu SBOMit."
+  },
+  "3b588b9876fd68e344d237ee341a9b7972a78c2dca958377ace27a0cbf2cd0b6": {
+    "es": "## ¿Puedo obtener un documento «SBOM» a partir de un documento «SBOMit»?",
+    "fr": "## Puis-je créer une «SBOM » à partir d'un document « SBOMit » ?",
+    "zh": "## 我能否从一个 SBOMit 文档中推导出一个 SBOM？",
+    "vi": "## Tôi có thể trích xuất tệp SBOM từ tài liệu SBOMit không?"
+  },
+  "28c23668d322fbdde8884840717ec1c8a6b0fa91543284b72092a1e93b459900": {
+    "es": "¡Sí! Se están desarrollando varias herramientas que permitirán obtener un documento «SBOM» a partir de un documento «SBOMit». Puedes obtener un documento «SBOMs» en diversos formatos utilizando diferentes herramientas.",
+    "fr": "Oui ! Plusieurs outils sont en cours de développement et permettront de générer un fichier «SBOM» à partir d'un document «SBOMit». Vous pouvez obtenir des fichiers «SBOMs» dans divers formats en utilisant ces différents outils.",
+    "zh": "没错！目前正在开发多种工具，这些工具能够从 SBOMit 文档中生成 SBOM 文档。您可以通过使用不同的工具，以多种不同的格式获取 SBOMs。",
+    "vi": "Đúng vậy! Hiện đang có nhiều công cụ đang được phát triển, cho phép trích xuất tệp định dạng “SBOM” từ tài liệu “SBOMit”. Bạn có thể tải xuống tệp “SBOMs” dưới nhiều định dạng khác nhau bằng cách sử dụng các công cụ này."
+  },
+  "722d238a747ec14744120b01af89e977f596e881e8f388e9cd25c15335c02b39": {
+    "es": "Comunidad",
+    "fr": "Communauté",
+    "zh": "社区",
+    "vi": "Cộng đồng"
+  },
+  "c7b9e13ab00ded3c360b57efd25039c866694176200aed482b8c4484e60ca630": {
+    "es": "**SBOMit** es un proyecto comunitario abierto desarrollado en el marco del Grupo de Trabajo sobre Herramientas de Seguridad\nde la OpenSSF. Damos la bienvenida a colaboradores, usuarios y a cualquier persona interesada\nen mejorar la fiabilidad de las cadenas de suministro de software.",
+    "fr": "**SBOMit** est un projet communautaire ouvert développé dans le cadre du groupe de travail « Security\nTooling » de l'OpenSSF. Nous invitons les contributeurs, les utilisateurs et toute personne intéressée\npar l'amélioration de la fiabilité des chaînes d'approvisionnement logicielles à nous rejoindre.",
+    "zh": "**SBOMit** 是一个在 OpenSSF 安全\n工具工作组框架下开发的开源社区项目。我们欢迎贡献者、用户以及任何\n希望提升软件供应链可信度的朋友参与。",
+    "vi": "**SBOMit** là một dự án cộng đồng mở được phát triển trong khuôn khổ Nhóm công tác về Công cụ bảo mật\ncủa Hiệp hội Phần mềm Mở (OpenSSF). Chúng tôi hoan nghênh các nhà đóng góp, người dùng và bất kỳ ai quan tâm\nđến việc nâng cao độ tin cậy của chuỗi cung ứng phần mềm."
+  },
+  "684a4bc8cd5a7b986a9cb3071b8c597a2bbe26d17c2e01982e9705011d33db9f": {
+    "es": "## Reuniones",
+    "fr": "## Réunions",
+    "zh": "## 会议",
+    "vi": "## Các cuộc họp"
+  },
+  "64264a8bad0a85649a20bfdabc50cf69f4fbbc2f42a548e60293a1b0fdc7a954": {
+    "es": "- Horario: Todos los miércoles a las 11:00 h, hora del Este de EE. UU.\n  [Enlace a la reunión de Zoom](https://nyu.zoom.us/j/91097299041)\n- [Notas de la reunión](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "fr": "- Horaires : tous les mercredis à 11 h, heure de la côte Est des États-Unis\n  [Lien vers la réunion Zoom](https://nyu.zoom.us/j/91097299041)\n- [Compte-rendu de la réunion](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "zh": "- 时间安排：每周三美国东部时间上午11:00\n  [Zoom会议链接](https://nyu.zoom.us/j/91097299041)\n- [会议记录](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "vi": "- Lịch trình: Mỗi thứ Tư lúc 11:00 sáng theo giờ miền Đông Hoa Kỳ\n  [Liên kết cuộc họp Zoom](https://nyu.zoom.us/j/91097299041)\n- [Biên bản cuộc họp](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)"
+  },
+  "fb06129034eb5438e48cec8168c71f073bddea70cb9fdac8e7946939c6e856ef": {
+    "es": "## ¡Conoce a los responsables del mantenimiento!",
+    "fr": "## Découvrez les responsables de la maintenance !",
+    "zh": "## 认识维护者们！",
+    "vi": "## Hãy làm quen với các nhà duy trì!"
+  },
+  "869ad2647e1e3256241c6bceb0211d281ffbf3d43f6a8b9ce1c973aa0c109499": {
+    "es": "- [Responsables](https://github.com/SBOMit/specification/blob/main/MAINTAINERS.md)",
+    "fr": "- [Responsables](https://github.com/SBOMit/specification/blob/main/MAINTAINERS.md)",
+    "zh": "- [维护者](https://github.com/SBOMit/specification/blob/main/MAINTAINERS.md)",
+    "vi": "- [Những người duy trì](https://github.com/SBOMit/specification/blob/main/MAINTAINERS.md)"
+  },
+  "040537f3f88da49ac376019f14ea4f3cfd4b547caac750704858e41762b69b68": {
+    "es": "## ¡Únete a nuestro Slack!",
+    "fr": "## Rejoignez notre canal Slack !",
+    "zh": "## 加入我们的 Slack 频道吧！",
+    "vi": "## Hãy tham gia Slack của chúng tôi!"
+  },
+  "c8de91f0e5ebb9d19d2a78d9aae83ae4c5fd084431268b506694124227e10b0a": {
+    "es": "- Haz clic en el icono de Slack que aparece en la parte inferior de la página\n- Añade estos dos canales: `#SBOMit` y `#sig-SBOM-everywhere`",
+    "fr": "- Cliquez sur l'icône Slack en bas de la page\n- Ajoutez ces deux canaux : `#SBOMit` et `#sig-SBOM-everywhere`",
+    "zh": "- 点击页面底部的 Slack 图标\n- 添加以下两个频道：`#SBOMit` 和 `#sig-SBOM-everywhere`",
+    "vi": "- Nhấp vào biểu tượng Slack ở cuối trang\n- Thêm hai kênh sau: `#SBOMit` và `#sig-SBOM-everywhere`"
+  },
+  "da6baa21614cc22359c6fa76b1a7cbe8b83fd6f24a7bccd0d1feecd27b5677c8": {
+    "es": "Documentación",
+    "fr": "Documentation",
+    "zh": "文档",
+    "vi": "Tài liệu hướng dẫn"
+  },
+  "c3ba170dd0522b394d60f414df2107e4632a886670531c73cf362e32c261f3a5": {
+    "es": "Aquí se publicará la documentación sobre la especificación «SBOMit», las herramientas y las implementaciones de referencia.",
+    "fr": "La documentation relative à la spécification «SBOMit», aux outils et aux implémentations de référence\nsera disponible ici.",
+    "zh": "SBOMit规范、工具及参考\n实现的相关文档将发布于此。",
+    "vi": "Tài liệu về đặc tả “SBOMit”, các công cụ và các bản triển khai tham chiếu\nsẽ được đăng tải tại đây."
+  },
+  "257f20a6cfd8963f46bebe42e83313596ac50d001272fdad9f83b694b68424cc": {
+    "es": "Mientras tanto, la fuente oficial es el\n[repositorio de especificaciones de SBOMit](https://github.com/SBOMit/specification).",
+    "fr": "En attendant, la source faisant autorité est le\n[référentiel des spécifications SBOMit](https://github.com/SBOMit/specification).",
+    "zh": "与此同时，权威来源是\n[SBOMit 规范库](https://github.com/SBOMit/specification)。",
+    "vi": "Trong khi đó, nguồn thông tin chính thức là\n[kho lưu trữ các tiêu chuẩn SBOMit](https://github.com/SBOMit/specification)."
+  },
+  "802a9eefa2c5d9a580df493c8251acf3adfadcc399be24408afec288b0b92d37": {
+    "es": "## Primeros pasos",
+    "fr": "## Pour commencer",
+    "zh": "## 入门指南",
+    "vi": "## Bắt đầu"
+  },
+  "3c43779f7e6c6859b314e7954bd6352ef2dc4cecec342f4335e83f80aa11955d": {
+    "es": "El contenido estará disponible próximamente.",
+    "fr": "Contenu à venir.",
+    "zh": "内容即将发布。",
+    "vi": "Nội dung sẽ sớm được cập nhật."
+  },
+  "908f2c3c2c07e6cef1e8575b0b3dd67a75635d6fff72384c136e4f83bef8e1e0": {
+    "es": "## Especificaciones",
+    "fr": "## Caractéristiques techniques",
+    "zh": "## 规格",
+    "vi": "## Thông số kỹ thuật"
+  },
+  "201dbb028174f2026678b30afb0ded5d8e2b8ff4ca8ee8ab3abbfcdae3737272": {
+    "es": "## Herramientas",
+    "fr": "## Outillage",
+    "zh": "## 工装",
+    "vi": "## Dụng cụ gia công"
+  },
+  "2e87f9740b8122b886a5f0b3712d045770f37972f06807174429c4a890b76536": {
+    "es": "Lista de componentes de software en in-toto (SBOMit)",
+    "fr": "Liste des composants logiciels sur in-toto (SBOMit)",
+    "zh": "in-toto 上的软件物料清单 (SBOMit)",
+    "vi": "Danh mục thành phần phần mềm trên in-toto (SBOMit)"
+  },
+  "c95fb0b5a47130faca4ae29acace87cb757b4d7545ce6ae5cc5e25efb03c4852": {
+    "es": "La especificación «SBOMit» es un método independiente del formato «SBOM» para certificar componentes con\ninformación de verificación adicional. Estos «attestation» se generan en el momento en que se crea la cadena de suministro.",
+    "fr": "La spécification «SBOMit» est une méthode indépendante du format «SBOM» permettant d’attester des composants à l’aide d’\ninformations de vérification supplémentaires. Ces «attestation» sont générées au moment de la création de la chaîne d’approvisionnement.",
+    "zh": "SBOMit规范是一种SBOM的、与格式无关的方法，用于通过\n附加验证信息对组件进行认证。这些attestation是在生成供应链时生成的。",
+    "vi": "Tiêu chuẩn “SBOMit” là một phương pháp không phụ thuộc vào định dạng “SBOM” nhằm xác thực các thành phần kèm theo\nthông tin xác minh bổ sung. Các thông tin xác minh bổ sung này (attestation) được tạo ra tại thời điểm chuỗi cung ứng được thiết lập."
+  },
+  "c2154983650f9d76d990978c37471aaee74d4bda60c029b19f417c3e2c156325": {
+    "es": "Esta información de verificación, que utiliza in-toto, attestations y layouts, puede ser validada por\nuna parte para obtener un alto grado de garantía sobre el software.",
+    "fr": "Ces informations de vérification, qui s'appuient sur in-toto, attestations et layouts, peuvent être validées par\nune tierce partie afin d'obtenir un niveau élevé d'assurance concernant le logiciel.",
+    "zh": "该验证信息使用了 in-toto、attestations 和 layouts，相关方可通过验证该信息，\n从而对该软件获得高度保证。",
+    "vi": "Thông tin xác minh này, sử dụng các địa chỉ in-toto, attestations và layouts, có thể được một bên liên quan xác thực\nđể đạt được mức độ đảm bảo cao về phần mềm."
+  },
+  "ae04135a39f37760ef9878caac3af40fe892e94972645fc0a7ff3fe342c67580": {
+    "es": "Preguntas frecuentes",
+    "fr": "FAQ",
+    "zh": "常见问题解答",
+    "vi": "Câu hỏi thường gặp"
+  },
+  "12b2dbdc2f88ae2c88968b13cb204f4e9e28de8398bc42aab1467702f0136745": {
+    "es": "## ¿Qué es «SBOMit»?",
+    "fr": "## Qu'est-ce que «SBOMit » ?",
+    "zh": "## 什么是SBOMit？",
+    "vi": "## “SBOMit” là gì?"
+  },
+  "11f600408e63dc0ea68c468b8639a4455ecf5dcb7a042914c968e766880403f2": {
+    "es": "SBOMit Es el nombre del proyecto que gestiona el formato de especificación «SBOMit». Un documento «SBOMit» es, en la práctica, un «SBOM», pero con información de verificación adicional que se generó en el momento en que se creó la cadena de suministro. Esta información de verificación, que utiliza in-toto, attestations y layouts, puede ser validada por una parte para obtener un alto grado de garantía sobre el software.",
+    "fr": "SBOMit C'est le nom du projet qui gère le format de spécification «SBOMit». Un document «SBOMit» correspond en réalité à un «SBOM», auquel ont été ajoutées des informations de vérification générées lors de la création de la chaîne d'approvisionnement. Ces informations de vérification, qui s'appuient sur les sites in-toto, attestations et layouts, peuvent être validées par une tierce partie afin d'obtenir un niveau élevé d'assurance concernant le logiciel.",
+    "zh": "SBOMit 这是管理“SBOMit”规范格式的项目名称。SBOMit文档实质上就是SBOM，只是额外添加了在生成供应链时生成的验证信息。该验证信息采用in-toto、attestations和layouts，相关方可对其进行验证，从而获得关于该软件的高可信度保证。",
+    "vi": "SBOMit là tên của dự án quản lý định dạng thông số kỹ thuật “SBOMit”. Một tài liệu “SBOMit” thực chất là một “SBOM”, chỉ khác là có bổ sung thêm thông tin xác minh được tạo ra tại thời điểm xây dựng chuỗi cung ứng. Thông tin xác minh này, sử dụng các tiêu chuẩn in-toto, attestations và layouts, có thể được một bên liên quan xác thực để đạt được mức độ đảm bảo cao về phần mềm."
+  },
+  "bda91b654cea1fb81b4578fe7b3c196803041d9d381dbb82fba3f1a5230ccbfb": {
+    "es": "## ¿Qué contiene un documento «SBOMit» y por qué?",
+    "fr": "## Que contient un document « SBOMit » et pourquoi ?",
+    "zh": "## 《SBOMit》文件包含哪些内容？原因是什么？",
+    "vi": "## Tài liệu “SBOMit” bao gồm những nội dung gì và tại sao?"
+  },
+  "129ff0510db70e7893ace45648893643bddca6c51955572caaa681eb9af5d692": {
+    "es": "Un documento «SBOMit» es un documento firmado que consta de varios componentes diferentes.  ",
+    "fr": "Un document «SBOMit» est un document signé composé de plusieurs éléments distincts.  ",
+    "zh": "SBOMit文档是一份经过签名的文档，由几个不同的组成部分构成。  ",
+    "vi": "Tài liệu “SBOMit” là một tài liệu đã được ký tên, bao gồm một số thành phần khác nhau.  "
+  },
+  "a533114dfc44113f287749473bd7f76ad5333d308e307039b33e20da4d16cd44": {
+    "es": "En primer lugar, contiene una serie de archivos in-toto attestations que se generaron durante el desarrollo del software descrito. Esto incluye información detallada sobre las diferentes etapas de la cadena de suministro del software, como el sistema de control de versiones, el proceso de compilación, las pruebas unitarias, las dependencias utilizadas, el fuzzing, las comprobaciones de cumplimiento de licencias, el empaquetado, etc.  Por ejemplo, el sistema de compilación utilizado para compilar el software en SBOM cuenta con in-toto metadata, donde figuran los nombres y los hash seguros de los archivos extraídos del sistema de control de versiones (VCS) para su compilación, los nombres y los hash seguros de los archivos creados durante la compilación, una serie de datos sobre el compilador y una firma generada por una clave privada en poder del compilador.",
+    "fr": "Tout d’abord, il contient une série de fichiers «in-toto » (attestations) générés au fur et à mesure de la création du logiciel décrit. Cela comprend des informations détaillées sur les différentes étapes de la chaîne logistique du logiciel, notamment sur le système de contrôle de version, le processus de compilation, les tests unitaires, les dépendances utilisées, le fuzzing, les vérifications de conformité des licences, le packaging, etc.  Par exemple, le système de compilation utilisé pour compiler le logiciel dans l’SBOM contient in-toto metadata les noms et les hachages sécurisés des fichiers extraits du système de contrôle de version (VCS) pour être compilés, les noms et les hachages sécurisés des fichiers créés lors de la compilation, une série d’informations sur le compilateur, ainsi qu’une signature générée par une clé privée détenue par le compilateur.",
+    "zh": "首先，它包含了一系列在开发所述软件过程中生成的 in-toto attestations。其中包含关于软件供应链各阶段的详细信息，包括版本控制系统、构建流程、单元测试、所用依赖项、模糊测试、许可证合规性检查、打包等。  例如，用于在 SBOM 中编译软件的构建系统包含 in-toto metadata，其中记录了从版本控制系统（VCS）中提取以供编译的文件的名称和安全哈希值、编译过程中生成的文件的名称和安全哈希值、关于编译器的一系列信息，以及由编译器持有的私钥所签署的签名。",
+    "vi": "Trước hết, nó chứa một loạt các tệp nhật ký xây dựng (in-toto) attestations được tạo ra trong quá trình phát triển phần mềm như đã mô tả. Điều này bao gồm thông tin chi tiết về các bước khác nhau trong chuỗi cung ứng phần mềm, bao gồm hệ thống kiểm soát phiên bản, quy trình xây dựng, kiểm thử đơn vị, các phụ thuộc được sử dụng, kiểm thử fuzzing, kiểm tra tuân thủ giấy phép, đóng gói, v.v.  Ví dụ, hệ thống xây dựng được sử dụng để biên dịch phần mềm trong SBOM có in-toto metadata với tên và hàm băm an toàn của các tệp được lấy từ VCS để biên dịch, tên và hàm băm an toàn của các tệp được tạo ra trong quá trình biên dịch, một loạt thông tin về trình biên dịch, và chữ ký bằng khóa riêng do trình biên dịch nắm giữ."
+  },
+  "94df75bf706ef1a7edf647ea17617672e213799d442d97b065e93d6cdcc40c51": {
+    "es": "Esta información attestation puede utilizarse en coordinación con el segundo punto del documento SBOMit: un in-toto layout. El in-toto layout está firmado por el responsable del proyecto y describe cómo debe ser una attestation metadata válida para el proyecto. El layout especifica las claves privadas de las partes que llevan a cabo el attestations, así como la forma en que se interconectan los pasos.  Por ejemplo, el VCS debe tener una etiqueta git firmada, sobre la que luego opera el sistema de compilación.  Los archivos compilados por el sistema de compilación deben ser los que se han sometido a las pruebas unitarias, las cuales deben haber superado con éxito.   Es importante destacar que un «in-toto» (layout) proporciona una política legible por máquina que puede validar el «in-toto» (attestations) para garantizar que se han seguido todos esos pasos, en el orden correcto, sobre los elementos adecuados y sin que se haya añadido, omitido ni eliminado nada.",
+    "fr": "Ces informations relatives à l’attestation peuvent être utilisées en coordination avec le deuxième élément du document « SBOMit » : un « in-toto » (layout). Le document « in-toto » (layout) est signé par le responsable du projet et décrit à quoi ressemble une « attestation » (metadata) valide pour le projet. Le fichier « layout » spécifie les clés privées des parties intervenant dans l’attestations, ainsi que la manière dont les différentes étapes s’enchaînent.  Par exemple, le système de contrôle de version (VCS) doit disposer d’une balise Git signée, sur laquelle le système de compilation opère ensuite.  Les fichiers compilés par le système de compilation doivent être ceux qui ont été soumis aux tests unitaires, lesquels doivent avoir été réussis.   Il est important de noter qu’un « in-toto » (layout) fournit une politique lisible par machine capable de valider le « in-toto » (attestations) afin de garantir que toutes ces étapes ont été suivies, dans le bon ordre, sur les bons éléments, et sans rien ajouter, sauter ou supprimer.",
+    "zh": "此 attestation 中的信息可与 SBOMit 文档中的第二项配合使用：即 in-toto layout。该 in-toto layout 由项目所有者签署，并描述了该项目有效的 attestation metadata 应具备的特征。 layout 指定了执行 attestations 的各方的私钥，以及各步骤之间的衔接方式。例如，版本控制系统（VCS）必须拥有一个已签名的 Git 标签，构建系统随后将基于该标签进行操作。由构建系统编译的文件必须是已通过单元测试的文件，且这些测试必须已通过。   重要的是，in-toto layout 提供了一份机器可读的策略，该策略可验证 in-toto attestations，以确保所有步骤均按正确顺序、针对正确对象执行，且未被添加、跳过或删除任何内容。",
+    "vi": "Thông tin tại attestation có thể được sử dụng kết hợp với mục thứ hai trong tài liệu SBOMit: một in-toto layout.  Tài liệu in-toto layout được ký bởi chủ sở hữu dự án và mô tả các attestation metadata hợp lệ cho dự án trông như thế nào. Tài liệu \"layout\" quy định các khóa riêng tư cho các bên thực hiện quy trình \"attestations\" cũng như cách các bước này liên kết với nhau. Ví dụ, hệ thống kiểm soát phiên bản (VCS) phải có một thẻ Git đã được ký, mà hệ thống xây dựng sau đó sẽ thao tác trên đó. Các tệp được hệ thống xây dựng biên dịch phải là những tệp đã được chạy qua các bài kiểm tra đơn vị (unit tests), và các bài kiểm tra này phải đã qua.   Điều quan trọng là, Chính sách Kiểm tra Tích hợp (in-toto) layout cung cấp một chính sách có thể đọc được bởi máy tính, có thể xác thực Quy trình Xây dựng (in-toto) attestations để đảm bảo rằng tất cả các bước đó đã được thực hiện đúng thứ tự, trên các mục đúng, và không có gì được thêm vào, bỏ qua hoặc loại bỏ."
+  },
+  "e11d79e25dcd6eb3104d9fe7e00bc39c32715acb9e066b3efb91f49f8e8a46fb": {
+    "es": "El elemento final que siempre aparece en el documento SBOMit es la información complementaria SBOM. Esta información, junto con in-toto, attestations y in-toto, layout, puede utilizarse para generar un SBOM real en diversos formatos. La información complementaria SBOM puede incluir datos como el nombre de la empresa u otra información que no figura en in-toto, pero que es conveniente incluir en el SBOM resultante.  De este modo, un documento SBOM generado a partir de un documento SBOMit puede incluir información complementaria que no formaba parte del proceso in-toto.",
+    "fr": "Le dernier élément qui figure systématiquement dans le document SBOMit est l’information complémentaire SBOM. Ces informations, associées à celles disponibles sur in-toto, attestations et in-toto, layout, peuvent être utilisées pour générer un SBOM complet dans divers formats. L’information complémentaire SBOM peut inclure des éléments tels que le nom de l’entreprise ou d’autres renseignements qui ne figurent pas sur in-toto mais qu’il est souhaitable d’inclure dans le SBOM final.  De cette manière, un document SBOM généré à partir d’un document SBOMit peut inclure des informations supplémentaires qui ne faisaient pas partie du processus de in-toto.",
+    "zh": "SBOMit文档中始终出现的最后一项是补充信息SBOM。该信息可与in-toto、attestations以及in-toto layout结合使用，以生成多种格式的实际SBOM。补充信息SBOM可能包含公司名称或其他未被in-toto收录、但希望纳入最终生成的SBOM中的信息。  通过这种方式，由SBOMit文档生成的SBOM，可以包含in-toto处理过程中未涉及的补充信息。",
+    "vi": "Mục cuối cùng luôn xuất hiện trong tài liệu SBOMit là thông tin bổ sung SBOM. Thông tin này cùng với in-toto attestations và in-toto layout có thể được sử dụng để tạo ra một SBOM thực tế dưới nhiều định dạng khác nhau. Thông tin bổ sung SBOM có thể bao gồm các nội dung như tên công ty hoặc các thông tin khác không được đề cập trong in-toto nhưng cần được đưa vào SBOM kết quả.  Như vậy, một tệp SBOM được tạo ra từ tài liệu SBOMit có thể bao gồm thông tin bổ sung không thuộc phần của quy trình in-toto."
+  },
+  "8bcc691d4b17909587e2fa2decfc0557acdda398c7eb9e89c0fff4cffb7912c9": {
+    "es": "También existe una forma de añadir un archivo «addendums» a un documento «SBOMit», que se describirá más adelante.",
+    "fr": "Il existe également un moyen d'ajouter un fichier « addendums » à un document « SBOMit », qui sera décrit plus loin.",
+    "zh": "此外，还有一种方法可以在SBOMit文档中添加addendums，相关内容将在后面介绍。",
+    "vi": "Ngoài ra, còn có một cách để thêm addendums vào tài liệu SBOMit, điều này sẽ được trình bày chi tiết hơn ở phần sau."
+  },
+  "dfb769418f7f64bf8ec431c0864615d81c218263e8cc18865e3cbaab5ea65683": {
+    "es": "## ¿Cuáles son las ventajas de un documento «SBOMit» frente al uso de una herramienta de generación «SBOM» que analiza el software?",
+    "fr": "## Quels sont les avantages d'un document « SBOMit » par rapport à l'utilisation d'un outil de génération de « SBOM » qui analyse le logiciel ?",
+    "zh": "## 与使用SBOM生成工具（该工具会扫描软件）相比，SBOMit文档有哪些优势？",
+    "vi": "## Tài liệu “SBOMit” có những ưu điểm gì so với việc sử dụng công cụ tạo mã “SBOM” dựa trên việc quét phần mềm?"
+  },
+  "01582e7dc6da72e75cc86fc96fb57a3a8f525dfaa501f5cd301eb1ce5d366adc": {
+    "es": "Las herramientas de análisis, por su propia naturaleza, examinan un programa y tratan de determinar qué ocurrió anteriormente. Por su propia naturaleza, son imperfectas, ya que utilizan información incompleta para intentar reconstruir lo que ocurrió en el pasado. La experiencia práctica ha demostrado que diferentes herramientas de análisis ofrecen resultados muy dispares para un mismo programa.  ",
+    "fr": "De par leur nature même, les outils d'analyse examinent un logiciel pour tenter de déterminer ce qui s'est passé auparavant. Ils sont, par nature, imparfaits, car ils s'appuient sur des informations incomplètes pour tenter de reconstituer ce qui s'est passé dans le passé. L'expérience pratique a montré que différents outils d'analyse peuvent donner des résultats très divergents pour un même logiciel.  ",
+    "zh": "扫描工具的本质是分析一段软件代码，进而试图推断此前发生过什么。由于其本质，这些工具难免存在缺陷，因为它们是利用不完整的信息来尝试还原过去发生的情况。实际应用表明，针对同一款软件，不同的扫描工具得出的结果可能大相径庭。  ",
+    "vi": "Về bản chất, các công cụ quét sẽ phân tích một phần mềm và sau đó cố gắng xác định những gì đã xảy ra trước đó. Về bản chất, chúng không hoàn hảo vì sử dụng thông tin không đầy đủ để cố gắng khôi phục lại những gì đã xảy ra trong quá khứ. Thực tiễn đã cho thấy rằng các công cụ quét khác nhau có thể đưa ra kết quả hoàn toàn khác biệt khi phân tích cùng một phần mềm.  "
+  },
+  "08f8d45c67e9eab832c7b8a5d5b87427dbe2ec1286fcd0ec1f17d440509a876d": {
+    "es": "Las secciones «in-toto» (",
+    "fr": "Les sections «in-toto» (attestation) d’un document «SBOMit» sont générées au moment où le logiciel est traité tout au long de la chaîne d’approvisionnement logicielle. Par conséquent, ces informations seront bien plus précises, car in-toto attestations recueillent des informations détaillées au moment même de la fabrication du produit logiciel. Cela rend, par nature, un document «SBOMit» bien plus précis.",
+    "zh": "SBOMit 文档中的 in-toto attestation 部分是在软件通过软件供应链进行处理时生成的。因此，这些信息会更加准确，因为 in-toto attestations 会在软件产品制造过程中收集详细信息。这使得 SBOMit 文档从本质上来说更加准确。",
+    "vi": "Các phần in-toto attestation của tài liệu SBOMit được tạo ra tại thời điểm phần mềm được xử lý qua chuỗi cung ứng phần mềm. Do đó, thông tin này sẽ chính xác hơn rất nhiều vì in-toto attestations thu thập thông tin chi tiết ngay tại thời điểm sản phẩm phần mềm đang được phát triển. Điều này khiến tài liệu SBOMit trở nên chính xác hơn rất nhiều, do bản chất của nó."
+  },
+  "071524b7abcb63cb7e0f86a0373e539295d4a00c89721924f40160672fd51e91": {
+    "es": "## ¿Cuáles son las ventajas de un documento «SBOMit» frente a la simple firma de un «SBOM»?",
+    "fr": "## Quels sont les avantages d'un document « SBOMit » par rapport à la simple signature d'un « SBOM » ?",
+    "zh": "## 与直接签署《SBOM》相比，SBOMit文件有哪些优势？",
+    "vi": "## Những ưu điểm của văn bản “SBOMit” so với việc chỉ ký vào văn bản “SBOM” là gì?"
+  },
+  "b913d10dfac45e3bbfa5f573f42a9baf803f0192fe5311b1081ddd834e078a22": {
+    "es": "Un «SBOM» firmado es una declaración firmada por una persona que posee la clave de firma de una organización y en la que se afirma que el «SBOM» es correcto. Si la clave es objeto de un robo, o si la parte que firma el «SBOM» se equivoca respecto a cómo se ha creado el software, entonces el «SBOM» será incorrecto.",
+    "fr": "Une «SBOM » signée est une déclaration signée par une personne détenant la clé de signature au sein d'une organisation, attestant que l'SBOM est exacte. Si la clé est volée, ou si la personne signant l'SBOM se trompe sur la manière dont le logiciel a été créé, alors l'SBOM sera inexacte.",
+    "zh": "一个经过签名的 SBOM 是由某组织中持有签名密钥的人员签署的声明，表明 SBOM 内容准确无误。如果密钥被盗，或者签署 SBOM 的方对软件的制作方式存在误解，那么 SBOM 的内容将不准确。",
+    "vi": "Một tệp “SBOM” đã được ký là một tuyên bố có chữ ký của người nắm giữ khóa ký tại một tổ chức, trong đó khẳng định rằng tệp “SBOM” là chính xác. Nếu khóa bị đánh cắp, hoặc bên ký tệp “SBOM” cung cấp thông tin không chính xác về cách phần mềm được phát triển, thì tệp “SBOM” sẽ không chính xác."
+  },
+  "828e0b2b3fcb92e942f9b70d2a903d88ad61f4f9b96abc3e80ff74c936111d71": {
+    "es": "Un documento «SBOMit» contiene información metadata firmada criptográficamente sobre todos los pasos que se han seguido para crear el software y describe la política que debe respetarse.  Es mucho más difícil que pasen desapercibidas imprecisiones accidentales, como saltarse un paso (lo cual ha sido un problema habitual), o que se produzcan acciones maliciosas.  in-toto también ofrece una mayor capacidad para recuperarse de forma segura tras un ataque y para detectar y contrarrestar las acciones maliciosas de una parte dentro de una organización.",
+    "fr": "Un document « SBOMit » contient des metadatas signées cryptographiquement concernant toutes les étapes ayant conduit à la création du logiciel et décrit la politique à respecter.  Il est ainsi beaucoup plus difficile que des inexactitudes accidentelles, telles que l’omission d’une étape (ce qui a souvent posé problème par le passé), ou des actions malveillantes passent inaperçues.  La «in-toto » offre également une plus grande capacité à se remettre en toute sécurité d’une compromission, ainsi qu’à détecter et à contrer les actions malveillantes menées par un acteur au sein d’une organisation.",
+    "zh": "SBOMit文档包含经过加密签名的metadata，其中记录了软件开发过程中的所有步骤，并描述了必须遵循的政策。  像遗漏某个步骤（历史上这曾是一个问题）这样的无意疏漏，或是恶意行为，都更难不被察觉。in-toto 还提供了更强大的能力，既能安全地从系统遭入侵中恢复，又能检测并抵御组织内部某一方的恶意行为。",
+    "vi": "Một tài liệu “SBOMit” chứa các thông tin được ký số (metadata) về tất cả các bước trong quá trình phát triển phần mềm và mô tả chính sách mà các bên liên quan phải tuân thủ.  Việc các sai sót vô ý như bỏ qua một bước (điều này trước đây từng là một vấn đề) hoặc các hành động độc hại không bị phát hiện sẽ trở nên khó khăn hơn nhiều.  in-toto cũng cung cấp khả năng cao hơn để khôi phục an toàn sau khi hệ thống bị xâm phạm, đồng thời phát hiện và chống lại các hành động độc hại từ một bên nào đó trong tổ chức."
+  },
+  "7c8f407eaa858b47c67e334f18f25cec322ff63b6b63a23923fb26d0470d692c": {
+    "es": "Por poner un ejemplo, un certificado de autenticación (SBOM) hoy en día se parece mucho a la lista de ingredientes que aparece en un producto. Sin embargo, en la práctica, esta información suele ser inexacta, podría ser modificada por alguien malintencionado y no está verificada. Firmar un certificado de autenticación (SBOM) ayuda a evitar que sea modificado por alguien malintencionado, de modo que sabes que la lista de ingredientes que recibes ha sido aprobada por una empresa concreta.  Un documento de «SBOMit» (Declaración de conformidad) también describe con detalle el proceso de fabricación del producto e incluye «metadata» y las firmas de todas las partes implicadas, incluida la verificación de que las claves utilizadas estaban vigentes en ese momento.  Por lo tanto, en el caso de un documento de «SBOMit», se tiene un alto grado de garantía de que se han seguido las políticas y procedimientos adecuados.",
+    "fr": "Pour utiliser une analogie, une « SBOM » (déclaration de composition) correspond aujourd’hui en grande partie à la liste des ingrédients figurant sur un produit. Seulement, dans la pratique, ces informations sont souvent inexactes, peuvent être modifiées par une partie malveillante et ne font l’objet d’aucune vérification. La signature d’une « SBOM » permet d’empêcher toute modification par une partie malveillante, ce qui vous garantit que la liste des ingrédients qui vous est fournie a bien été approuvée par une entreprise spécifique.  Un document « SBOMit » décrit également en détail le processus de fabrication du produit et contient l’metadata ainsi que les signatures de toutes les parties impliquées, y compris la vérification que les clés utilisées étaient à jour à ce moment-là. Ainsi, dans le cas d’un document « SBOMit », vous disposez d’un haut degré de garantie que les politiques et procédures appropriées ont été respectées.",
+    "zh": "打个比方，如今的“SBOM”就如同产品上的成分表。只是实际上，这些信息通常并不准确，可能会被恶意方篡改，且未经核实。对“SBOM”进行签名有助于防止其被恶意方篡改，因此您可以确信所获得的成分表已获得特定公司的批准。  SBOMit文档还会详细描述产品的制造过程，并包含所有相关方的metadata和签名，其中包括对所用密钥在当时是否有效的验证。因此，对于SBOMit文档，您可以高度确信相关政策和程序已得到正确遵循。",
+    "vi": "Để lấy một ví dụ so sánh, ngày nay, “SBOM” (Tuyên bố thành phần) cũng giống như danh sách thành phần trên một sản phẩm. Tuy nhiên, trên thực tế, thông tin này thường không chính xác, có thể bị các bên có ý đồ xấu thay đổi và không được xác minh. Việc ký số vào “SBOM” (Tuyên bố thành phần được ký số) giúp ngăn chặn việc thông tin này bị các bên có ý đồ xấu thay đổi, nhờ đó bạn có thể chắc chắn rằng danh sách thành phần mà bạn nhận được đã được một công ty cụ thể phê duyệt.  Tài liệu “Bản khai báo thành phần” (SBOMit) cũng mô tả chi tiết quy trình sản xuất sản phẩm và bao gồm các thông tin xác thực (metadata) cùng chữ ký của tất cả các bên liên quan, bao gồm cả việc xác minh rằng các khóa được sử dụng là hợp lệ tại thời điểm đó. Do đó, đối với tài liệu “Bản khai báo thành phần” (SBOMit), bạn có mức độ đảm bảo cao rằng các chính sách và quy trình phù hợp đã được tuân thủ."
+  },
+  "ec3b49c09ddc44de443ee4a5d7f5708e8190c2aead865b4b2f5e051e149d97f6": {
+    "es": "Para obtener más información sobre este tema, consulta la sección [¿Qué ventajas ofrece in-toto?](https://in-toto.io/in-toto/) en la página web in-toto.",
+    "fr": "Pour plus d'informations à ce sujet, veuillez consulter la rubrique [Quels sont les avantages d'in-toto ?](https://in-toto.io/in-toto/) sur le site in-toto.",
+    "zh": "有关此主题的更多信息，请参阅in-toto网站上的[in-toto有哪些优势](https://in-toto.io/in-toto/)。",
+    "vi": "Để biết thêm thông tin về chủ đề này, vui lòng tham khảo bài viết [in-toto mang lại những lợi ích gì](https://in-toto.io/in-toto/) trên trang web in-toto."
+  },
+  "dcbd2402befa0551b71fa3f4a3b4d8b43466ce5ae932a7b19029930cd8b4bdd7": {
+    "es": "## ¿Qué pasaría si la cadena de suministro de un software incluyera pasos poco seguros?  ",
+    "fr": "## Que se passe-t-il si la chaîne d'approvisionnement d'un logiciel comporte des étapes non sécurisées ?  ",
+    "zh": "## 如果软件供应链中存在不安全的环节，会怎样？  ",
+    "vi": "## Nếu chuỗi cung ứng phần mềm chứa các bước không an toàn thì sao?  "
+  },
+  "20407f01dbfacdccf880ab02b2e04efb2a6c822e502b93c8649bdc7987f1b174": {
+    "es": "in-toto attestations no sustituyen a la implementación de medidas de seguridad adecuadas en la cadena de suministro de software. Por ejemplo, si utilizas un proceso inseguro de compilación de software que simplemente descarga y compila el software desde un sitio web, in-toto y layouts pueden registrar esta acción insegura y verificar el archivo firmado attestations, lo que indica que has realizado dicha acción insegura.  ",
+    "fr": "in-toto attestations ne remplacent pas la mise en place de mesures de sécurité adéquates tout au long de la chaîne logistique logicielle. Par exemple, si vous utilisez un processus de compilation non sécurisé qui se contente de récupérer et de compiler un logiciel à partir d’un site web, in-toto layouts peut répertorier cette action non sécurisée et vérifier le fichier signé attestations indiquant que vous avez effectué cette action non sécurisée.  ",
+    "zh": "in-toto attestations 不能替代在软件供应链中采取适当的安全措施。例如，如果您使用一种不安全的软件构建流程，仅通过 curl 命令从网站下载并构建软件，in-toto layouts 可以列出这一不安全操作，并验证签名的 attestations，表明您执行了该不安全操作。  ",
+    "vi": "in-toto attestations không thể thay thế cho việc áp dụng các biện pháp bảo mật phù hợp trong chuỗi cung ứng phần mềm. Ví dụ, nếu bạn sử dụng quy trình xây dựng phần mềm không an toàn, chỉ đơn thuần sử dụng lệnh curl để tải xuống và biên dịch phần mềm từ một trang web, thì in-toto và layouts có thể liệt kê hành động không an toàn này và xác minh tệp đã ký attestations, cho thấy rằng bạn đã thực hiện hành động không an toàn này.  "
+  },
+  "939eecb40276c5fd540346f15641ef0f2a2a9471469ee9cb3dcac54f8353ee0a": {
+    "es": "Por eso, proyectos como SLSA y FRSCA se han diseñado como un conjunto de normas con un enfoque concreto que se suman a los pasos descritos en in-toto. En ellos se especifican qué medidas son más importantes para la seguridad de la cadena de suministro de software y se exigen determinadas acciones.  ",
+    "fr": "C'est pourquoi des projets tels que SLSA et FRSCA s'appuient sur les étapes décrites sur in-toto pour définir un ensemble de règles bien définies. Ils précisent quelles mesures sont prioritaires pour la sécurité de la chaîne d'approvisionnement logicielle et rendent certaines d'entre elles obligatoires.  ",
+    "zh": "正因如此，像 SLSA 和 FRSCA 这样的项目，才是在 in-toto 步骤的基础上构建的一套具有明确立场的规则集。它们明确指出了哪些措施对软件供应链安全更为重要，并强制要求采取某些措施。  ",
+    "vi": "Đó là lý do tại sao các dự án như SLSA và FRSCA được xây dựng dưới dạng một bộ quy tắc có quan điểm rõ ràng, dựa trên các bước được nêu tại in-toto. Các dự án này chỉ ra những hành động nào quan trọng hơn đối với an ninh chuỗi cung ứng phần mềm và yêu cầu bắt buộc phải thực hiện một số hành động cụ thể.  "
+  },
+  "17e56355587de4a33dceb32e01a44cdb1749db496b402d729c9413c25ff2dbcf": {
+    "es": "Estos proyectos resuelven diferentes problemas a distintos niveles.  in-toto permite registrar información sobre tus pasos, garantizar que se apliquen las políticas correspondientes, gestionar la confianza en las claves, etc.  Marcos como SLSA y FRSCA utilizan in-toto como mecanismo para registrar y hacer cumplir un conjunto específico de políticas que dan lugar a cadenas de suministro más seguras.  ",
+    "fr": "Ces projets apportent des solutions à différents problèmes à différents niveaux.  in-toto vous permet de collecter des informations sur vos étapes, de veiller à l'application des politiques qui s'y rapportent, de gérer la confiance des clés, etc.  Des frameworks tels que SLSA et FRSCA utilisent in-toto comme mécanisme permettant de collecter et d'appliquer un ensemble spécifique de politiques visant à renforcer la sécurité des chaînes d'approvisionnement.  ",
+    "zh": "这些项目在不同层面上解决着不同的问题。in-toto 允许您记录有关操作步骤的信息、确保相关策略得到执行、处理密钥信任等问题。SLSA 和 FRSCA 等框架则利用 in-toto 作为一种机制，用于记录和执行一组特定的策略，从而构建更安全的供应链。  ",
+    "vi": "Các dự án này đang giải quyết những vấn đề khác nhau ở các cấp độ khác nhau.  in-toto cho phép bạn thu thập thông tin về các bước thực hiện, đảm bảo các chính sách liên quan được áp dụng, quản lý tính tin cậy của khóa, v.v.  Các khung công tác như SLSA và FRSCA sử dụng in-toto như một cơ chế để thu thập và thực thi một bộ chính sách cụ thể, từ đó giúp chuỗi cung ứng trở nên an toàn hơn.  "
+  },
+  "d5e051cbe83bf2923b9467ad0a3b5f90fa110ef228e2ec6f8527e49a582fae3a": {
+    "es": "Se están realizando esfuerzos para que las herramientas automatizadas de SLSA y FRSCA funcionen con in-toto y layouts, y validen el cumplimiento de los requisitos. Cuando estas herramientas alcancen la madurez, podrán integrarse para analizar un documento de SBOMit y proporcionar el nivel de puntuación adecuado para la cadena de suministro de software descrita en él. De este modo, un usuario podrá configurar su sistema para que solo acepte software de SLSA de nivel 4 o superior, que además cuente con un documento válido de SBOMit.",
+    "fr": "Des efforts sont actuellement déployés pour permettre aux outils automatisés destinés aux sites SLSA et FRSCA de fonctionner sur in-toto et layouts, et de valider la conformité. Lorsque ces outils auront atteint leur maturité, ils pourront être intégrés pour analyser un document SBOMit et attribuer le niveau de notation approprié à la chaîne d'approvisionnement logicielle qui y est décrite. Ainsi, un utilisateur pourra alors configurer son système pour n'accepter que des logiciels de niveau 4 ou supérieur selon SLSA, accompagnés d'un document SBOMit valide.",
+    "zh": "目前正在努力使针对 SLSA 和 FRSCA 的自动化工具能够在 in-toto layouts 上运行，并验证合规性。当这些工具成熟后，即可将其集成以解析 SBOMit 文档，并为其中描述的软件供应链提供相应的评分等级。因此，用户随后可配置其系统，仅接受 SLSA 评分等级为 4 级或更高的软件，且该软件还需具备有效的 SBOMit 文档。",
+    "vi": "Hiện đang có những nỗ lực nhằm phát triển các công cụ tự động cho SLSA và FRSCA để chúng có thể hoạt động trên in-toto layouts và xác minh tính tuân thủ. Khi các công cụ này đạt đến độ chín muồi, chúng có thể được tích hợp để phân tích tài liệu SBOMit và cung cấp mức điểm đánh giá phù hợp cho chuỗi cung ứng phần mềm được mô tả trong đó. Nhờ đó, người dùng có thể cấu hình hệ thống của mình để chỉ chấp nhận phần mềm đạt mức 4 trở lên theo tiêu chuẩn SLSA, đồng thời phải có tài liệu SBOMit hợp lệ."
+  },
+  "cba4e6131b558d124d0f9992777553a0e278050a50db9873f27020e7ae550718": {
+    "es": "## ¿Qué ocurre si es necesario modificar un documento de «SBOMit» con el paso del tiempo? Por ejemplo, para afirmar que no presenta una determinada vulnerabilidad explotable, o para añadir posteriormente información complementaria que no era necesaria en el momento de su creación, etc.",
+    "fr": "## Que se passe-t-il si un document «SBOMit» doit être modifié au fil du temps ? Par exemple, pour affirmer qu’il ne présente pas une certaine vulnérabilité exploitable, pour ajouter ultérieurement des informations complémentaires qui n’étaient pas nécessaires au moment de sa création, etc.",
+    "zh": "## 如果一份《SBOMit》文档需要随着时间的推移进行修改，该怎么办？例如，声明该文档不存在某项可被利用的漏洞，或在后续添加创建时未涉及的补充信息等。",
+    "vi": "## Nếu một tài liệu “SBOMit” cần được điều chỉnh theo thời gian thì sao? Ví dụ: khẳng định rằng tài liệu đó không chứa một lỗ hổng bảo mật nào có thể bị khai thác, bổ sung thông tin sau này mà lúc ban đầu chưa cần thiết, v.v."
+  },
+  "aaabb779a4462d7137d122ebe395fc7b6ced418b6bedf3cc72b4f039cd9793b5": {
+    "es": "Un documento SBOMit puede contener una serie de «addendums» a posteriori. Estos se añaden con posterioridad y deben ser firmados en última instancia por la clave maestra del documento original SBOMit. Sirven para modificar los distintos campos del documento SBOMit o para añadir información complementaria.  ",
+    "fr": "Un document « SBOMit » peut comporter une série d’addendums a posteriori. Celles-ci sont ajoutées après coup et doivent être signées, en dernier ressort, par la clé principale du document « SBOMit » d’origine. Elles servent à modifier les différents champs du document « SBOMit » ou à ajouter des informations complémentaires.  ",
+    "zh": "一份SBOMit文档可能包含一系列事后添加的addendums。这些证书是在事后添加的，最终必须由原始SBOMit文档的主密钥进行签名。它们用于修改SBOMit文档中的各个字段或添加补充信息。  ",
+    "vi": "Một tài liệu SBOMit có thể chứa một loạt các bản ghi bổ sung (addendums) được thêm vào sau khi tài liệu đã được tạo. Những bản ghi này được thêm vào sau khi tài liệu đã được tạo và cuối cùng phải được ký bằng khóa chính (master key) của tài liệu gốc SBOMit. Chúng có chức năng sửa đổi các trường khác nhau trong tài liệu SBOMit hoặc bổ sung thông tin.  "
+  },
+  "aadb6f6b5a5c729a56f9d9692b615f69d8de0761c581cf0d59d408f272a2c0bb": {
+    "es": "Utilizar addendums en lugar de crear un nuevo documento SBOMit tiene una ventaja. De esta forma, tanto el documento original como cualquier addendums serán verificables y el historial de estos cambios quedará recogido íntegramente en el documento SBOMit. Por lo tanto, addendums es el modelo recomendado para gestionar los cambios en un documento SBOMit.",
+    "fr": "L'utilisation d'un document « addendums » plutôt que la création d'un nouveau document « SBOMit » présente un avantage. De cette manière, tant le document d'origine que toute modification apportée (addendums) seront vérifiables, et l'historique de ces modifications sera entièrement conservé dans le document « SBOMit ». Ainsi, les documents « addendums » constituent le modèle recommandé pour gérer les modifications apportées à un document « SBOMit ».",
+    "zh": "使用addendums而非创建新的SBOMit文档具有一定优势。这样一来，原始文档和任何addendums都将可验证，且这些更改的历史记录均包含在SBOMit文档中。因此，addendums是处理SBOMit文档更改的推荐模式。",
+    "vi": "Việc sử dụng addendums thay vì tạo một tài liệu mới tại SBOMit mang lại một lợi thế.  Bằng cách này, cả tài liệu gốc lẫn bất kỳ bản addendums nào cũng sẽ có thể kiểm chứng được, và lịch sử của những thay đổi này đều được lưu giữ trong tài liệu SBOMit.  Do đó, addendums là mô hình được khuyến nghị để xử lý các thay đổi đối với tài liệu SBOMit."
+  },
+  "5b4c967cf37cc36e3f41bfe6bd9e91a52414e40a4cff44b69b4fab4c561909a9": {
+    "es": "## ¿Puedo obtener un documento «SBOM» a partir de un documento «SBOMit»?",
+    "fr": "## Puis-je créer une «SBOM » à partir d'un document « SBOMit » ?",
+    "zh": "## 我能否从一个 SBOMit 文档中生成一个 SBOM 文档？",
+    "vi": "## Tôi có thể trích xuất tệp SBOM từ tài liệu SBOMit không?"
+  },
+  "6809e5fc7d9167d01548af71b63d49b02f1c8eb69848205fd4f87d931248f269": {
+    "es": "¡Sí! Se están desarrollando varias herramientas que permitirán obtener un documento «SBOM» a partir de un documento «SBOMit». Puedes obtener un documento «SBOMs» en diversos formatos utilizando diferentes herramientas.",
+    "fr": "Oui ! Plusieurs outils sont en cours de développement et permettront de générer un fichier «SBOM» à partir d'un document «SBOMit». Vous pouvez obtenir des fichiers «SBOMs» dans divers formats en utilisant ces différents outils.",
+    "zh": "没错！目前正在开发多种工具，这些工具能够从 SBOMit 文档中生成 SBOM 文件。您可以通过使用不同的工具，以多种不同的格式获取 SBOMs 文件。",
+    "vi": "Đúng vậy! Hiện có nhiều công cụ đang được phát triển để trích xuất tệp định dạng “SBOM” từ tài liệu “SBOMit”. Bạn có thể tải xuống tệp “SBOMs” dưới nhiều định dạng khác nhau bằng cách sử dụng các công cụ khác nhau."
+  },
+  "bd6ef2f80245430f6174f537a3cb65e89bf663b810ee2ec43b840f5e412cb127": {
+    "es": "Comunidad",
+    "fr": "Communauté",
+    "zh": "社区",
+    "vi": "Cộng đồng"
+  },
+  "f4c2c331d08c6063023c9d4ded7145296c20a8849cbf772c6e5ebf21ec1ccf04": {
+    "es": "**SBOMit** es un proyecto comunitario abierto desarrollado en el marco del Grupo de Trabajo sobre Herramientas de Seguridad\nde la OpenSSF. Damos la bienvenida a colaboradores, usuarios y a cualquier persona interesada\nen mejorar la fiabilidad de las cadenas de suministro de software.",
+    "fr": "**SBOMit** est un projet communautaire ouvert développé dans le cadre du groupe de travail « Security\nTooling » de l'OpenSSF. Nous invitons les contributeurs, les utilisateurs et toute personne intéressée\npar l'amélioration de la fiabilité des chaînes d'approvisionnement logicielles à nous rejoindre.",
+    "zh": "**SBOMit** 是一个在 OpenSSF 安全\n工具工作组框架下开发的开源社区项目。我们欢迎贡献者、用户以及任何\n希望提升软件供应链可信度的朋友参与。",
+    "vi": "**SBOMit** là một dự án cộng đồng mở được phát triển trong khuôn khổ Nhóm công tác về Công cụ bảo mật\ncủa Hiệp hội Phần mềm Mở (OpenSSF). Chúng tôi hoan nghênh các nhà đóng góp, người dùng và bất kỳ ai quan tâm\nđến việc nâng cao độ tin cậy của chuỗi cung ứng phần mềm."
+  },
+  "f12d4c8b68cca08535e421b1646e2ab63bafb42c612b2db421465d0da05659d4": {
+    "es": "## Reuniones",
+    "fr": "## Réunions",
+    "zh": "## 会议",
+    "vi": "## Các cuộc họp"
+  },
+  "b9988c05c28babc69b8da96d798f70a0ba8816452c016b95bc016d21eda8e951": {
+    "es": "- Horario: Todos los miércoles a las 11:00 h, hora del Este de EE. UU.\n  [Enlace a la reunión de Zoom](https://nyu.zoom.us/j/91097299041)\n- [Notas de la reunión](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "fr": "- Horaires : tous les mercredis à 11 h, heure de la côte Est des États-Unis\n  [Lien vers la réunion Zoom](https://nyu.zoom.us/j/91097299041)\n- [Compte-rendu de la réunion](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "zh": "- 时间安排：每周三美国东部时间上午11:00\n  [Zoom会议链接](https://nyu.zoom.us/j/91097299041)\n- [会议纪要](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)",
+    "vi": "- Lịch trình: Mỗi thứ Tư lúc 11:00 sáng theo giờ Miền Đông Hoa Kỳ\n  [Liên kết cuộc họp Zoom](https://nyu.zoom.us/j/91097299041)\n- [Biên bản cuộc họp](https://docs.google.com/document/d/1-nHXMqvWNzgOxAq08O8Wu2BTHz0U60yBoAklrJAMaRc/edit?usp=sharing)"
+  },
+  "5e09e4acf24ce3a55c0bfe6e39f4d8da112b25a9aebb75dc60f134e49b2434ec": {
+    "es": "## ¡Conoce a los responsables del mantenimiento!",
+    "fr": "## Découvrez les responsables de la maintenance !",
+    "zh": "## 认识维护者们！",
+    "vi": "## Hãy làm quen với các nhà duy trì!"
+  },
+  "014108f27d95655b2fca905e50b29a0e89f00e8aca029cffc778398e6c1b9736": {
+    "es": "- [Responsables](https://github.com/SBOMit/specification/blob/main/MAINTAINERS.md)",
+    "fr": "- [Responsables](https://github.com/SBOMit/specification/blob/main/MAINTAINERS.md)",
+    "zh": "- [维护者](https://github.com/SBOMit/specification/blob/main/MAINTAINERS.md)",
+    "vi": "- [Người duy trì](https://github.com/SBOMit/specification/blob/main/MAINTAINERS.md)"
+  },
+  "c997d0dd3886ffb0e39c9703bd05469be4feb3a93f546c1d06023d9a449c8d14": {
+    "es": "## ¡Únete a nuestro Slack!",
+    "fr": "## Rejoignez notre canal Slack !",
+    "zh": "## 加入我们的 Slack 频道吧！",
+    "vi": "## Hãy tham gia Slack của chúng tôi!"
+  },
+  "3f7a2b0df8a11f45f59058e064b589cfbb4907ccba4f60d9592f8560a59ed998": {
+    "es": "- Haz clic en el icono de Slack que aparece en la parte inferior de la página\n- Añade estos dos canales: `#SBOMit` y `#sig-SBOM-everywhere`",
+    "fr": "- Cliquez sur l'icône Slack en bas de la page\n- Ajoutez ces deux canaux : `#SBOMit` et `#sig-SBOM-everywhere`",
+    "zh": "- 点击页面底部的 Slack 图标\n- 添加以下两个频道：`#SBOMit` 和 `#sig-SBOM-everywhere`",
+    "vi": "- Nhấp vào biểu tượng Slack ở cuối trang\n- Thêm hai kênh sau: `#SBOMit` và `#sig-SBOM-everywhere`"
+  },
+  "281c2dec49d874978ac45d8f0844d6dcdb3ced965c485aff821d8d36af5cea89": {
+    "es": "Documentación",
+    "fr": "Documentation",
+    "zh": "文档",
+    "vi": "Tài liệu hướng dẫn"
+  },
+  "77a1cbccfe2f52ad6c4389268f0774970bb8d87207566a4ea07171d353ad5740": {
+    "es": "Aquí se publicará la documentación sobre la especificación «SBOMit», las herramientas y las implementaciones de referencia.",
+    "fr": "La documentation relative à la spécification «SBOMit», aux outils et aux implémentations de référence\nsera disponible ici.",
+    "zh": "SBOMit规范、工具及参考\n实现的相关文档将发布于此。",
+    "vi": "Tài liệu về đặc tả “SBOMit”, các công cụ và các bản triển khai tham chiếu\nsẽ được đăng tải tại đây."
+  },
+  "222aed699d54a6cbe4694c18b16b683669c3c5d3fb6a5315573e7ffff47f9d1d": {
+    "es": "Mientras tanto, la fuente oficial es el\n[repositorio de especificaciones de SBOMit](https://github.com/SBOMit/specification).",
+    "fr": "En attendant, la source faisant autorité est le\n[référentiel des spécifications de SBOMit](https://github.com/SBOMit/specification).",
+    "zh": "与此同时，权威来源是\n[SBOMit 规范库](https://github.com/SBOMit/specification)。",
+    "vi": "Trong khi đó, nguồn thông tin chính thức là\n[kho lưu trữ các tiêu chuẩn SBOMit](https://github.com/SBOMit/specification)."
+  },
+  "2881facb5beb84c1525822575ff865a2da11440fe0a358769593f133a5f386b2": {
+    "es": "## Primeros pasos",
+    "fr": "## Pour commencer",
+    "zh": "## 入门指南",
+    "vi": "## Bắt đầu"
+  },
+  "0db5dc3caa58bb910e53b3c5eab126e940c94683392a038f0b076540c1a0a55e": {
+    "es": "El contenido estará disponible próximamente.",
+    "fr": "Contenu à venir.",
+    "zh": "内容即将发布。",
+    "vi": "Nội dung sẽ sớm được cập nhật."
+  },
+  "87a780e8304b1c85d6333e63e3ea7e4b49a76e546fe76b242ac14b06fa10c2d7": {
+    "es": "## Especificaciones",
+    "fr": "## Spécifications",
+    "zh": "## 规格",
+    "vi": "## Thông số kỹ thuật"
+  },
+  "2a66630a62abd68d5b96917b64d4cb098ebf6c0106a70b60f4956c540ff88459": {
+    "es": "## Herramientas",
+    "fr": "## Outillage",
+    "zh": "## 工装",
+    "vi": "## Dụng cụ gia công"
   }
 }

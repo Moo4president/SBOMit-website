@@ -69,6 +69,11 @@
         <ul id="menu" class="menu">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $href := $menu_item_url }}
+            {{- if eq .Identifier "legal" }}
+              {{- $menu_item_url = "/charter/" | absURL }}
+              {{- $href = "/charter/" }}
+            {{- end }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             {{- $menuName := .Name }}
@@ -76,7 +81,7 @@
               {{- with i18n . }}{{ $menuName = . }}{{ end }}
             {{- end }}
             <li>
-                <a href="{{ .URL | absLangURL }}"
+                <a href="{{ $href }}"
                     {{- if (findRE "://" .URL) }} target="_blank" rel="noopener noreferrer"{{ end }}
                     title="{{ .Title | default $menuName }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>

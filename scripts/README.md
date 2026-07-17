@@ -29,9 +29,19 @@ Translates:
 
 Skips `CHARTER.md`. Writes `content/*.{es,fr,zh,vi}.md`.
 
+## Protected technical terms
+
+Before DeepL runs, each block goes through:
+
+1. **URL mask** — markdown link targets (`](https://…)`) and bare `https://` URLs become numbered placeholders (`⟦0⟧`); DeepL never sees the URL.
+2. **Term protection** — terms such as **SBOM**, **in-toto**, **attestation**, **layout**, **SLSA**, and **FRSCA** are wrapped in `<x>…</x>` (`ignore_tags: x`) so they stay in English.
+3. After translation, placeholders and `<x>` tags are restored in reverse order.
+
+Edit `PROTECTED_TERMS` in `scripts/translate.mjs` to add more protected terms.
+
 ## Cache
 
-Translations are cached by SHA-256 of each English **block** (blank-line segments; fenced code never translated) in `scripts/.translate-cache.json`.
+Translations are cached by SHA-256 of each English **block** (blank-line segments; fenced code never translated) in `scripts/.translate-cache.json`. The cache version prefix in `translate.mjs` is bumped when translation logic changes, which forces a one-time re-translate of all blocks.
 
 - Edit one English paragraph → only that block is re-billed.
 - Second run with no English changes → zero API calls.

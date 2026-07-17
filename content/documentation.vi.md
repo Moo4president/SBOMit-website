@@ -4,11 +4,11 @@ title: "Tài liệu hướng dẫn"
 translationKey: "documentation"
 ShowToc: true
 ---
-Tài liệu về đặc tả SBOMit, các công cụ và các bản triển khai tham chiếu
+Tài liệu về đặc tả “SBOMit”, các công cụ và các bản triển khai tham chiếu
 sẽ được đăng tải tại đây.
 
 Trong khi đó, nguồn thông tin chính thức là
-[kho lưu trữ thông số kỹ thuật SBOMit](https://github.com/SBOMit/specification).
+[kho lưu trữ các tiêu chuẩn SBOMit](https://github.com/SBOMit/specification).
 
 ## Bắt đầu
 

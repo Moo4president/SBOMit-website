@@ -54,10 +54,121 @@ const SOURCE_FILES = [
 const CACHE_PATH = join(__dirname, ".translate-cache.json");
 const CONTENT_DIR = join(ROOT, "content");
 
+/** Bump when translation logic changes so blocks are re-billed once. */
+const CACHE_VERSION = "v4-url-mask";
+
 const translator = new deepl.Translator(API_KEY);
+
+/** Opaque token DeepL should leave alone; tolerant restore allows stray spaces. */
+const MASK_RE = /⟦\s*(\d+)\s*⟧/g;
+
+function maskToken(id) {
+  return `⟦${id}⟧`;
+}
+
+/**
+ * Technical terms kept in English in all locales (longest match first).
+ * Add new entries here; re-run `npm run translate` after edits.
+ */
+const PROTECTED_TERMS = [
+  "in-toto",
+  "SBOMit",
+  "attestations",
+  "attestation",
+  "addendums",
+  "layouts",
+  "layout",
+  "OpenSSF",
+  "SBOMs",
+  "SBOM",
+  "SLSA",
+  "FRSCA",
+  "metadata",
+].sort((a, b) => b.length - a.length);
 
 function sha256(text) {
   return createHash("sha256").update(text, "utf8").digest("hex");
+}
+
+function cacheKey(text) {
+  return sha256(`${CACHE_VERSION}:${text}`);
+}
+
+/**
+ * Replace markdown link targets and bare URLs with numbered placeholders.
+ * Link text is still translated; only the URL is hidden from DeepL.
+ */
+function maskLinksAndUrls(text) {
+  const vault = [];
+  let result = "";
+  let i = 0;
+  while (i < text.length) {
+    const rest = text.slice(i);
+    const mdMatch = rest.match(/^\]\(([^)]+)\)/);
+    const bareMatch = mdMatch ? null : rest.match(/^https?:\/\/[^\s)\]]+/);
+    if (mdMatch) {
+      const id = vault.length;
+      vault.push(mdMatch[1]);
+      result += `](${maskToken(id)})`;
+      i += mdMatch[0].length;
+    } else if (bareMatch) {
+      const id = vault.length;
+      vault.push(bareMatch[0]);
+      result += maskToken(id);
+      i += bareMatch[0].length;
+    } else {
+      result += text[i];
+      i += 1;
+    }
+  }
+  return { text: result, vault };
+}
+
+function unmaskLinksAndUrls(text, vault) {
+  return text.replace(MASK_RE, (_, id) => {
+    const idx = Number(id);
+    return vault[idx] ?? maskToken(id);
+  });
+}
+
+/** Wrap protected terms in <x>…</x> for DeepL ignore_tags. */
+function protectTerms(text) {
+  let result = "";
+  let i = 0;
+  while (i < text.length) {
+    let matched = null;
+    for (const term of PROTECTED_TERMS) {
+      if (
+        text.slice(i, i + term.length).toLowerCase() === term.toLowerCase()
+      ) {
+        matched = term;
+        break;
+      }
+    }
+    if (matched) {
+      result += `<x>${matched}</x>`;
+      i += matched.length;
+    } else {
+      result += text[i];
+      i += 1;
+    }
+  }
+  return result;
+}
+
+/** Unwrap <x> tags and fix occasional DeepL splits of hyphenated terms. */
+function restoreTerms(text) {
+  return text.replace(/<\/?x>/gi, "").replace(/\bin\s+toto\b/gi, "in-toto");
+}
+
+/** Mask URLs → protect terms → (DeepL) → restore terms → unmask URLs. */
+function prepareBlockForTranslation(text) {
+  const { text: masked, vault } = maskLinksAndUrls(text);
+  return { deeplInput: protectTerms(masked), vault };
+}
+
+function finalizeBlockTranslation(text, vault) {
+  return unmaskLinksAndUrls(restoreTerms(text), vault);
 }
 
 function loadCache() {
@@ -166,13 +277,21 @@ function buildFrontMatter(fm, lang, translationKey) {
 
 async function translateTexts(texts, targetLang) {
   if (texts.length === 0) return [];
-  // DeepL accepts string | string[]; preserve order
-  const result = await translator.translateText(texts, "en", targetLang, {
-    tagHandling: "html",
-    preserveFormatting: true,
-  });
+  const prepared = texts.map(prepareBlockForTranslation);
+  const result = await translator.translateText(
+    prepared.map((p) => p.deeplInput),
+    "en",
+    targetLang,
+    {
+      tagHandling: "xml",
+      ignoreTags: ["x"],
+      preserveFormatting: true,
+    }
+  );
   const arr = Array.isArray(result) ? result : [result];
-  return arr.map((r) => r.text);
+  return arr.map((r, i) =>
+    finalizeBlockTranslation(r.text, prepared[i].vault)
+  );
 }
 
 async function translateFile(relPath, cache, stats) {
@@ -196,7 +315,7 @@ async function translateFile(relPath, cache, stats) {
 
     // Title
     if (titleEn) {
-      const hash = sha256(`title:${titleEn}`);
+      const hash = cacheKey(`title:${titleEn}`);
       const cached = cache[hash]?.[hugoLang];
       if (cached) {
         stats.hits++;
@@ -216,7 +335,7 @@ async function translateFile(relPath, cache, stats) {
         jobs.push({ kind: "block", text: block, hash: null, skip: true });
         continue;
       }
-      const hash = sha256(block);
+      const hash = cacheKey(block);
       const cached = cache[hash]?.[hugoLang];
       if (cached) {
         stats.hits++;

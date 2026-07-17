@@ -96,7 +96,7 @@ params:
     - name: github
       url: "https://github.com/SBOMit/specification"
     - name: slack
-      # Replace with the project's Slack invite URL when available.
+      # OpenSSF Slack join; Community page lists #sbomit and #sig-sbom-everywhere.
       url: "https://slack.openssf.org/"
 
   analytics:
@@ -110,6 +110,10 @@ params:
 
 menu:
   main:
+    - identifier: intoto
+      name: in-toto
+      url: https://in-toto.io/
+      weight: 3
     - identifier: witness
       name: witness.dev
       url: https://witness.dev
@@ -130,6 +134,10 @@ menu:
       name: FAQ
       url: /faq/
       weight: 40
+    - identifier: legal
+      name: Legal
+      url: /charter/
+      weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:

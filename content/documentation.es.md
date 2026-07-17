@@ -4,7 +4,7 @@ title: "Documentación"
 translationKey: "documentation"
 ShowToc: true
 ---
-Aquí se publicará la documentación sobre la especificación SBOMit, las herramientas y las implementaciones de referencia.
+Aquí se publicará la documentación sobre la especificación «SBOMit», las herramientas y las implementaciones de referencia.
 
 Mientras tanto, la fuente oficial es el
 [repositorio de especificaciones de SBOMit](https://github.com/SBOMit/specification).
